@@ -1,0 +1,16 @@
+[
+    {
+        "@type": "MuscleActivity",
+        "custom": true,
+        "id": "77a8d3e4-2dce-4dac-9306-9a70e9b6dbb2",
+        "instructions": "go to the bathroom",
+        "name": "Pooop",
+        "equipment": 0,
+        "mainTargetMuscle": 2,
+        "secondaryTargetMuscles": [
+            6,
+            8
+        ],
+        "type": 0
+    }
+]

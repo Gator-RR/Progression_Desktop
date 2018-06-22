@@ -1,0 +1,25 @@
+[
+    {
+        "deviceName": "Pixel",
+        "id": "b511f62d-a7a3-4fb5-b867-625e30809d30",
+        "serialIdentifier": "FA7270303872",
+        "scheduleId": "631be97a-902a-43fe-9ca5-1bf91f050063"
+    },
+    {
+        "deviceName": "GT-N5110",
+        "serialIdentifier": "4300a0b0bafc9025",
+        "scheduleId": "1"
+    },
+    {
+        "deviceName": "SGH-M919",
+        "id": "28289c3e-60dd-47ce-b40d-8d02fb36bec0",
+        "serialIdentifier": "8e4e0897",
+        "scheduleId": "4"
+    },
+    {
+        "deviceName": "Nexus 6P",
+        "id": "ee56421c-c9d1-467a-8009-e3689a7d879e",
+        "serialIdentifier": "8XV5T15C26001449",
+        "scheduleId": "3578e25c-c24e-4c4a-accf-60dbb05b32b5"
+    }
+]
