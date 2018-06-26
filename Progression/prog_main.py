@@ -33,30 +33,37 @@ class App:
         self.box.grid(column=0, row=0)
 
 
+def get_activities():
+    file_name = 'Progression\\fws.json'
+    activities = {}
+
+    fws = read_json(file_name)
+    activities = [element['activities'] for element in fws]
+    activities_dict = {}
+    for elem in activities:
+        for i in elem:
+            activities_dict[i['name']] = i
+
+    file_name = 'Progression\\ua.json'
+    ua = read_json(file_name)
+    for elem in ua:
+        activities_dict[elem['name']] = elem
+    return activities_dict
+
 
 if __name__ == '__main__':
     '''
         Launch GUI for progresson application
     '''
-    file_name = 'Progression\\fws.json'
-    activities =  {}
+    activities = get_activities()
 
-    fws = read_json(file_name)
-    activities  = [element['activities'] for element in fws]
-    activities_dict = {}
-    for elem in activities :
-        for  i in elem :
-            activities_dict[i['name']] = i
+    # TODO: get string containing new workout
 
-
-    # Merge two dictionarys
-    # z = {**x,**y}
+    # TODO: Print keys contain the substring
+    # [value for key, value in programs.items() if 'new york' in key.lower()]
+    # https://stackoverflow.com/questions/10484261/find-dictionary-items-whose-key-matches-a-substring
 
     print("Hello")
-
-
-
-        
 
     # root = Tk()
     # app = App(root)
