@@ -48,6 +48,10 @@ if __name__ == '__main__':
         for  i in elem :
             activities_dict[i['name']] = i
 
+
+    # Merge two dictionarys
+    # z = {**x,**y}
+
     print("Hello")
 
 
