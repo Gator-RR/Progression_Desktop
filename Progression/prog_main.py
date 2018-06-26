@@ -39,13 +39,17 @@ if __name__ == '__main__':
         Launch GUI for progresson application
     '''
     file_name = 'Progression\\fws.json'
-    activities_set =  set()
+    activities =  {}
 
     fws = read_json(file_name)
+    activities  = [element['activities'] for element in fws]
+    activities_dict = {}
+    for elem in activities :
+        for  i in elem :
+            activities_dict[i['name']] = i
 
-    activities_set.add(day["activities"] for day in fws)
-    print("hello")
-    activities_set.__getattribute__
+    print("Hello")
+
 
 
         
