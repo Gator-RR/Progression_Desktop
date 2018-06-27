@@ -56412,6 +56412,731 @@
                 "index": 0,
                 "name": "Shoulders/Triceps/Traps",
                 "type": 0
+            },
+            {
+                "activities": [
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": false,
+                        "id": "125",
+                        "instructions": "Stand in a pulldown machine and grab the bar at a shoulder wide width. Begin pushing downwards with your arms straight throughout the movement, stop when you're about to reach your thighs.",
+                        "name": "Straight-Arm Machine Lat Pulldown",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "note": "4:0:1:2",
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 12,
+                                    "minReps": 12
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 12,
+                                    "minReps": 12
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 12,
+                                    "minReps": 12
+                                }
+                            ],
+                            "restPerSet": 0
+                        },
+                        "equipment": 4,
+                        "mainTargetMuscle": 2,
+                        "type": 0
+                    },
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": false,
+                        "id": "112",
+                        "instructions": "Sit down on a bench in front of a cable machine. Pull the handle towards your lower belly while keeping your back straight. Then slowly let the handle back and let your arms stretch out fully.",
+                        "name": "Cable Row",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "note": "Close V-grip",
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 12,
+                                    "minReps": 12
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 12,
+                                    "minReps": 12
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 12,
+                                    "minReps": 12
+                                }
+                            ],
+                            "restPerSet": 0
+                        },
+                        "equipment": 6,
+                        "mainTargetMuscle": 2,
+                        "secondaryTargetMuscles": [
+                            3
+                        ],
+                        "type": 0
+                    },
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": false,
+                        "id": "109",
+                        "instructions": "Grab a barbell with a little wider than a shoulder width grip. While keeping your back straight and abs flexed, bend over until your back is at a 45 degree angle towards the floor. Pull the barbell towards your abs and stop when they touch, then let the barbell back down so you end up with your arms fully stretched out.",
+                        "name": "Bent-Over Barbell Row",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "note": "Hammer Machine and Grip, 4:2:1:2",
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 8,
+                                    "minReps": 8
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 8,
+                                    "minReps": 8
+                                },
+                                {
+                                    "allOut": true,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 8,
+                                    "minReps": 8
+                                },
+                                {
+                                    "allOut": true,
+                                    "index": 3,
+                                    "mark": 0,
+                                    "maxReps": 8,
+                                    "minReps": 8
+                                }
+                            ],
+                            "restPerSet": 60000
+                        },
+                        "equipment": 1,
+                        "mainTargetMuscle": 2,
+                        "secondaryTargetMuscles": [
+                            3
+                        ],
+                        "type": 0
+                    },
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": false,
+                        "id": "118",
+                        "instructions": "Adjust the machine so that your legs fit comfortably under the rack. Grab the bar and sit down with your legs under the rack. With a slight arch in your lower back begin pulling down towards your upper chest. After touching your chest with the bar, slowly return it until your arms and lats are fully stretched.",
+                        "name": "Machine Lat Pulldown",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "note": "Wide Grip (1:2:1:2)",
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 12,
+                                    "minReps": 12
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 10,
+                                    "minReps": 10
+                                },
+                                {
+                                    "allOut": true,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 8,
+                                    "minReps": 8
+                                },
+                                {
+                                    "allOut": true,
+                                    "index": 3,
+                                    "mark": 0,
+                                    "maxReps": 8,
+                                    "minReps": 8
+                                }
+                            ],
+                            "restPerSet": 60000
+                        },
+                        "equipment": 4,
+                        "mainTargetMuscle": 2,
+                        "secondaryTargetMuscles": [
+                            3
+                        ],
+                        "type": 0
+                    },
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": false,
+                        "id": "111",
+                        "instructions": "Put a pair of dumbbells on the floor in front of you on the floor. Position your feet at hip width apart, slightly bend your knees, bend over with a straight back, and grab both dumbbells with a neutral grip. Pull both dumbbells towards the side of your abs and then slowly let them back down until your arms are straight.",
+                        "name": "Bent-Over Dumbbell Row",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "note": "Elevated Bent over D-grip Barbell (6:0:1:0)",
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                },
+                                {
+                                    "allOut": true,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                },
+                                {
+                                    "allOut": true,
+                                    "index": 3,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                },
+                                {
+                                    "allOut": true,
+                                    "index": 4,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                },
+                                {
+                                    "allOut": true,
+                                    "index": 5,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                }
+                            ],
+                            "restPerSet": 60000
+                        },
+                        "equipment": 2,
+                        "mainTargetMuscle": 2,
+                        "secondaryTargetMuscles": [
+                            3
+                        ],
+                        "type": 0
+                    }
+                ],
+                "index": 1,
+                "name": "Back/Neck/Abs",
+                "type": 0
+            },
+            {
+                "activities": [
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": true,
+                        "id": "77a8d3e4-2dce-4dac-9306-9a70e9b6dbb2",
+                        "instructions": "go to the bathroom",
+                        "name": "Pooop",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 0,
+                                    "minReps": 0
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 0,
+                                    "minReps": 0
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 0,
+                                    "minReps": 0
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 3,
+                                    "mark": 0,
+                                    "maxReps": 0,
+                                    "minReps": 0
+                                }
+                            ],
+                            "restPerSet": 0
+                        },
+                        "equipment": 0,
+                        "mainTargetMuscle": 2,
+                        "secondaryTargetMuscles": [
+                            6,
+                            8
+                        ],
+                        "type": 0
+                    }
+                ],
+                "index": 2,
+                "name": "Testing testing",
+                "type": 0
+            },
+            {
+                "activities": [
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": false,
+                        "id": "233",
+                        "instructions": "Stand up in a smith machine with a plate or some elevated object on the floor in front of you. Stand on it with the front of your foot and push yourself up through your foot. Then lower yourself back down. Tip: Stop for 1 second at the bottom of the movement.",
+                        "name": "Smith Machine Calf Raise",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "note": "1:2:1:2, toes pointed in",
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 15,
+                                    "minReps": 15
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 0,
+                                    "minReps": 0
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 0,
+                                    "minReps": 0
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 3,
+                                    "mark": 0,
+                                    "maxReps": 0,
+                                    "minReps": 0
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 4,
+                                    "mark": 0,
+                                    "maxReps": 0,
+                                    "minReps": 0
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 5,
+                                    "mark": 0,
+                                    "maxReps": 0,
+                                    "minReps": 0
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 6,
+                                    "mark": 0,
+                                    "maxReps": 0,
+                                    "minReps": 0
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 7,
+                                    "mark": 0,
+                                    "maxReps": 0,
+                                    "minReps": 0
+                                }
+                            ],
+                            "restPerSet": 0
+                        },
+                        "equipment": 5,
+                        "mainTargetMuscle": 4,
+                        "type": 0
+                    },
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": false,
+                        "id": "230",
+                        "instructions": "Stand up in the machine with the pads on your shoulders, unrack the weight and lower it all the way down so that you feel a good stretch in your calves. Push it all the way up and then lower it back down slowly, pausing at the bottom for a second or two to avoid pushing with your achilles heel.",
+                        "name": "Machine Calf Raise",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "note": "Single leg, leg press machine 4:2:1:2",
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 8,
+                                    "minReps": 8
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 0,
+                                    "minReps": 0
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 0,
+                                    "minReps": 0
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 3,
+                                    "mark": 0,
+                                    "maxReps": 0,
+                                    "minReps": 0
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 4,
+                                    "mark": 0,
+                                    "maxReps": 0,
+                                    "minReps": 0
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 5,
+                                    "mark": 0,
+                                    "maxReps": 0,
+                                    "minReps": 0
+                                }
+                            ],
+                            "restPerSet": 0
+                        },
+                        "equipment": 4,
+                        "mainTargetMuscle": 4,
+                        "type": 0
+                    },
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": true,
+                        "id": "c3743e49-f49c-4e19-9679-ca20d9c18896",
+                        "instructions": "",
+                        "name": "Decline bench cable sit up",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "note": "",
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 12,
+                                    "minReps": 12
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 0,
+                                    "minReps": 0
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 10,
+                                    "minReps": 10
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 3,
+                                    "mark": 0,
+                                    "maxReps": 0,
+                                    "minReps": 0
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 4,
+                                    "mark": 0,
+                                    "maxReps": 8,
+                                    "minReps": 8
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 5,
+                                    "mark": 0,
+                                    "maxReps": 0,
+                                    "minReps": 0
+                                }
+                            ],
+                            "restPerSet": 0
+                        },
+                        "equipment": 0,
+                        "mainTargetMuscle": 0,
+                        "type": 0
+                    },
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": false,
+                        "id": "198",
+                        "instructions": "Hang freely from a pull-up-bar and raise your legs straight forward as if you were doing a curl with your whole body.",
+                        "name": "Hanging Leg Raise",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "note": "",
+                            "parameters": [
+                                {
+                                    "allOut": true,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 12,
+                                    "minReps": 12
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 0,
+                                    "minReps": 0
+                                },
+                                {
+                                    "allOut": true,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 10,
+                                    "minReps": 10
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 3,
+                                    "mark": 0,
+                                    "maxReps": 0,
+                                    "minReps": 0
+                                }
+                            ],
+                            "restPerSet": 0
+                        },
+                        "equipment": 3,
+                        "mainTargetMuscle": 1,
+                        "type": 0
+                    },
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": false,
+                        "id": "193",
+                        "instructions": "Stand on your knees in a cable machine with a cable attached to the handle. Grab the cable with both hands at the sides of your head. Pull the cable down as if you were doing an upside-down sit-up. Then let the cable back up. Keep hips stationary throughout the movement.",
+                        "name": "Cable Crunch",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "note": "Standing",
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 12,
+                                    "minReps": 12
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 0,
+                                    "minReps": 0
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 10,
+                                    "minReps": 10
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 3,
+                                    "mark": 0,
+                                    "maxReps": 0,
+                                    "minReps": 0
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 4,
+                                    "mark": 0,
+                                    "maxReps": 8,
+                                    "minReps": 8
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 5,
+                                    "mark": 0,
+                                    "maxReps": 0,
+                                    "minReps": 0
+                                }
+                            ],
+                            "restPerSet": 0
+                        },
+                        "equipment": 6,
+                        "mainTargetMuscle": 1,
+                        "type": 0
+                    },
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": false,
+                        "id": "57",
+                        "instructions": "Sit and grab the barbell with an underhand grip. Rest your arms on your thighs and let it roll all the way out to your fingers. Then squeeze it with your fingers so that the barbell ends up in the middle of your palm again.",
+                        "name": "Barbell Wrist Curl",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "note": "",
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 30,
+                                    "minReps": 30
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 25,
+                                    "minReps": 25
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 20,
+                                    "minReps": 20
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 3,
+                                    "mark": 0,
+                                    "maxReps": 15,
+                                    "minReps": 15
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 4,
+                                    "mark": 0,
+                                    "maxReps": 8,
+                                    "minReps": 8
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 5,
+                                    "mark": 0,
+                                    "maxReps": 0,
+                                    "minReps": 0
+                                }
+                            ],
+                            "restPerSet": 0
+                        },
+                        "equipment": 1,
+                        "mainTargetMuscle": 9,
+                        "secondaryTargetMuscles": [
+                            3
+                        ],
+                        "type": 0
+                    },
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": false,
+                        "id": "55",
+                        "instructions": "Sit and grab a dumbbell with an underhand grip. Rest your arm on your thigh and let the dumbbell roll all the way out to your fingers. Then squeeze it with your fingers so that the dumbbell ends up in the middle of your palm again.",
+                        "name": "Dumbbell Wrist Curl",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "note": "Barbell reverse",
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 30,
+                                    "minReps": 30
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 25,
+                                    "minReps": 25
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 20,
+                                    "minReps": 20
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 3,
+                                    "mark": 0,
+                                    "maxReps": 15,
+                                    "minReps": 15
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 4,
+                                    "mark": 0,
+                                    "maxReps": 8,
+                                    "minReps": 8
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 5,
+                                    "mark": 0,
+                                    "maxReps": 0,
+                                    "minReps": 0
+                                }
+                            ],
+                            "restPerSet": 0
+                        },
+                        "equipment": 2,
+                        "mainTargetMuscle": 9,
+                        "secondaryTargetMuscles": [
+                            3
+                        ],
+                        "type": 0
+                    }
+                ],
+                "index": 3,
+                "name": "Calves/Abs/Forearms",
+                "type": 0
             }
         ],
         "id": "631be97a-902a-43fe-9ca5-1bf91f050063",

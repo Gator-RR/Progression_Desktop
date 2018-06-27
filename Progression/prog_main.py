@@ -36,15 +36,12 @@ def write_json(data):
 
 
 def get_activities():
-    file_name = 'Progression\\fws.json'
-    activities = {}
+    file_name = 'Progression\\ma.json'
 
-    fws = read_json(file_name)
-    activities = [element['activities'] for element in fws]
+    ma = read_json(file_name)
     activities_dict = {}
-    for elem in activities:
-        for i in elem:
-            activities_dict[i['name']] = i
+    for elem in ma:
+        activities_dict[elem['name']] = elem
 
     file_name = 'Progression\\ua.json'
     ua = read_json(file_name)
@@ -90,7 +87,7 @@ def on_select(event):
     print('(event)  current:', event.widget.get(event.widget.curselection()))
     name = event.widget.get(event.widget.curselection())
     print('---')
-    newActivities[name] = activities[name]
+    newActivities.append(activities[name])
 
 
 def add_day():
@@ -100,10 +97,11 @@ def add_day():
     day['index'] += 1
     # TODO:
     day['name'] = "FIGURE OUT HOW TO GET THIS FROM UI"
-    # TODO: Need to perserve order somehow, if it becomes an issue
-    day['activities'] = newActivities.values()
+    day['activities'] = newActivities
+    quad_guy[0]['days'].append(day)
 
     print('Hello')
+
 
 if __name__ == '__main__':
     '''
@@ -113,7 +111,7 @@ if __name__ == '__main__':
     # activities = get_activities()
 
     # activity_names = activities.keys()
-    # newActivities = {}
+    # newActivities = []
 
     # # Created GUI
 
@@ -132,7 +130,8 @@ if __name__ == '__main__':
 
     # root.mainloop()
 
-    newActivities = {'Alternating Dumbbell Curl': {'@type': 'MuscleActivity', 'custom': False, 'id': '31', 'name': 'Alternating Dumbbell Curl', 'performance': {'completedSets': [{'completedAt': 1459789094279, 'duration': 0, 'mark': 0, 'reps': 10, 'weight': 9.071848}, {'completedAt': 1459789200426, 'duration': 0, 'mark': 0, 'reps': 10, 'weight': 9.071848}, {'completedAt': 1459789327807, 'duration': 0, 'mark': 0, 'reps': 10, 'weight': 9.071848}]}, 'performanceTarget': {'groupIndex': -1, 'note': '', 'parameters': [{'allOut': False, 'index': 0, 'mark': 0, 'maxReps': 12, 'minReps': 10}, {'allOut': False, 'index': 1, 'mark': 0, 'maxReps': 12, 'minReps': 10}, {'allOut': True, 'index': 2, 'mark': 0, 'maxReps': 12, 'minReps': 10}], 'restPerSet': 60000}, 'equipment': 2, 'mainTargetMuscle': 3, 'type': 0}, 'Barbell Bench Press': {'@type': 'MuscleActivity', 'custom': False, 'id': '7', 'instructions': "Lie down on a flat bench under a barbell. Preferably in a rack, for your own safety. Begin the movement by unracking the barbell and lowering it towards your chest, once it hits the chest, push it back up. Consider using a spotter if you're lifting heavy weights.", 'name': 'Barbell Bench Press', 'performance': {'completedSets': [{'completedAt': 1457371273644, 'duration': 0, 'mark': 0, 'reps': 12, 'weight': 61.234974}, {'completedAt': 1457371443285, 'duration': 0, 'mark': 0, 'reps': 12, 'weight': 61.234974}, {'completedAt': 1457371703262, 'duration': 0, 'mark': 0, 'reps': 12, 'weight': 61.234974}]}, 'performanceTarget': {'groupIndex': -1, 'parameters': [{'allOut': False, 'index': 0, 'mark': 0, 'maxReps': 15, 'minReps': 12}, {'allOut': False, 'index': 1, 'mark': 0, 'maxReps': 15, 'minReps': 12}, {'allOut': False, 'index': 2, 'mark': 0, 'maxReps': 15, 'minReps': 12}], 'restPerSet': 0}, 'equipment': 1, 'mainTargetMuscle': 5, 'secondaryTargetMuscles': [7, 8], 'type': 0}, 'Barbell Concentration Curl': {'@type': 'MuscleActivity', 'custom': False, 'id': '47', 'name': 'Barbell Concentration Curl', 'performance': {'completedSets': [{'completedAt': 1479245617790, 'duration': 0, 'mark': 0, 'reps': 11, 'weight': 24.947582}, {'completedAt': 1479245620213, 'duration': 0, 'mark': 0, 'reps': 11, 'weight': 24.947582}, {'completedAt': 1479245804938, 'duration': 0, 'mark': 0, 'reps': 11, 'weight': 24.947582}]}, 'performanceTarget': {'groupIndex': -1, 'note': 'Seated barbell curl', 'parameters': [{'allOut': False, 'index': 0, 'mark': 0, 'maxReps': 0, 'minReps': 0}, {'allOut': False, 'index': 1, 'mark': 0, 'maxReps': 0, 'minReps': 0}, {'allOut': False, 'index': 2, 'mark': 0, 'maxReps': 0, 'minReps': 0}], 'restPerSet': 0}, 'equipment': 1, 'mainTargetMuscle': 3, 'type': 0}}
+    newActivities = [{'@type': 'MuscleActivity', 'custom': False, 'id': '26', 'instructions': 'Stand in a cable machine with one handle in each hand. The handles should be at knee height while hanging freely. Begin to pull them together and up as if you were hugging a tree with them. You should end up with the handles in front of you at chest level. Then finish the movement by letting them back out to your sides until your arms form two "L"s.', 'name': 'Cable Crossover (with Low Angle)', 'performanceTarget': {'groupIndex': -1, 'parameters': [{'allOut': False, 'index': 0, 'mark': 0, 'maxReps': 0, 'minReps': 0}, {'allOut': False, 'index': 1, 'mark': 0, 'maxReps': 0, 'minReps': 0}, {'allOut': False, 'index': 2, 'mark': 0, 'maxReps': 0, 'minReps': 0}, {'allOut': False, 'index': 3, 'mark': 0, 'maxReps': 0, 'minReps': 0}], 'restPerSet': 0}, 'equipment': 6, 'mainTargetMuscle': 5, 'type': 0}, {'@type': 'MuscleActivity', 'custom': False, 'id': '186', 'instructions': 'Place a box at your side and explode through your heels and jump up on it.', 'name': 'Lateral Box Jump', 'performanceTarget': {'groupIndex': -1, 'parameters': [{'allOut': False, 'index': 0, 'mark': 0, 'maxReps': 0, 'minReps': 0}, {'allOut': False, 'index': 1, 'mark': 0, 'maxReps': 0, 'minReps': 0}, {'allOut': False, 'index': 2, 'mark': 0, 'maxReps': 0, 'minReps': 0}, {'allOut': False, 'index': 3, 'mark': 0, 'maxReps': 0, 'minReps': 0}], 'restPerSet': 0}, 'equipment': 3, 'mainTargetMuscle': 6, 'secondaryTargetMuscles': [4], 'type': 0}, {
+        '@type': 'MuscleActivity', 'custom': False, 'id': '118', 'instructions': 'Adjust the machine so that your legs fit comfortably under the rack. Grab the bar and sit down with your legs under the rack. With a slight arch in your lower back begin pulling down towards your upper chest. After touching your chest with the bar, slowly return it until your arms and lats are fully stretched.', 'name': 'Machine Lat Pulldown', 'performanceTarget': {'groupIndex': -1, 'parameters': [{'allOut': False, 'index': 0, 'mark': 0, 'maxReps': 0, 'minReps': 0}, {'allOut': False, 'index': 1, 'mark': 0, 'maxReps': 0, 'minReps': 0}, {'allOut': False, 'index': 2, 'mark': 0, 'maxReps': 0, 'minReps': 0}, {'allOut': False, 'index': 3, 'mark': 0, 'maxReps': 0, 'minReps': 0}], 'restPerSet': 0}, 'equipment': 4, 'mainTargetMuscle': 2, 'secondaryTargetMuscles': [3], 'type': 0}, {'@type': 'MuscleActivity', 'custom': False, 'id': '128', 'instructions': 'Sit in a pulldown machine but rather than pulling towards your upper chest, pull the bar towards your neck. Stopping just before it touches it.', 'name': 'Machine Lat Pulldown (Behind the Neck)', 'performanceTarget': {'groupIndex': -1, 'parameters': [{'allOut': False, 'index': 0, 'mark': 0, 'maxReps': 0, 'minReps': 0}, {'allOut': False, 'index': 1, 'mark': 0, 'maxReps': 0, 'minReps': 0}, {'allOut': False, 'index': 2, 'mark': 0, 'maxReps': 0, 'minReps': 0}, {'allOut': False, 'index': 3, 'mark': 0, 'maxReps': 0, 'minReps': 0}], 'restPerSet': 0}, 'equipment': 4, 'mainTargetMuscle': 2, 'secondaryTargetMuscles': [3], 'type': 0}]
 
     # Add selected items to day
 

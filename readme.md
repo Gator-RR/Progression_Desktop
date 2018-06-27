@@ -5,3 +5,4 @@ fws.json - user history,  I believe
 ms.json - info about account, not important  
 ua.json - user activities  
 up.json - user programs  
+ma.json - I made this, it is all preinstalled excersizes
