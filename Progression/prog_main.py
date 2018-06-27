@@ -19,22 +19,6 @@ def write_json(data):
         json.dump(data, outputfile)
 
 
-# class App:
-
-#     value_of_combo = 'X'
-
-#     def __init__(self, parent):
-#         self.parent = parent
-#         self.combo()
-
-#     def combo(self):
-#         self.box_value = StringVar()
-#         self.box = ttk.Combobox(self.parent, textvariable=self.box_value)
-#         self.box['values'] = ('X', 'Y', 'Z')
-#         self.box.current(0)
-#         self.box.grid(column=0, row=0)
-
-
 def get_activities():
     file_name = 'Progression\\ma.json'
 
@@ -71,14 +55,23 @@ def on_keyrelease(event):
 
 def listbox_update(data):
     # delete previous data
-    listbox.delete(0, 'end')
+    entry_listbox.delete(0, 'end')
 
     # sorting data
     data = sorted(data, key=str.lower)
 
     # put new data
     for item in data:
-        listbox.insert('end', item)
+        entry_listbox.insert('end', item)
+
+
+def selected_listbox_update():
+    # delete previous data
+    selected_listbox.delete(0, 'end')
+
+    # put new data
+    for item in activity_options:
+        selected_listbox.insert('end', item)
 
 
 def on_select(event):
@@ -87,58 +80,82 @@ def on_select(event):
     print('(event)  current:', event.widget.get(event.widget.curselection()))
     name = event.widget.get(event.widget.curselection())
     print('---')
-    newActivities.append(activities[name])
+    activity_options[name] = activities[name]
+    selected_listbox_update()
+
+
+def on_deselect(event):
+    # display element selected on list
+    print('(event) previous:', event.widget.get('active'))
+    print('(event)  current:', event.widget.get(event.widget.curselection()))
+    name = event.widget.get(event.widget.curselection())
+    print('---')
+    del activity_options[name]
+    selected_listbox_update()
 
 
 def add_day():
     up = read_json('Progression\\up.json')
     quad_guy = [prog for prog in up if prog['name'] == 'Quad Guy']
-    day = quad_guy[0]['days'][-1]
+    day = quad_guy[0]['days'][-1].copy()
     day['index'] += 1
     # TODO:
     day['name'] = "FIGURE OUT HOW TO GET THIS FROM UI"
-    day['activities'] = newActivities
+    day['activities'] = new_activities
     quad_guy[0]['days'].append(day)
+    write_json(up)
 
     print('Hello')
+
+
+def request_set_reps():
+    return
 
 
 if __name__ == '__main__':
     '''
         Launch GUI for progresson application
     '''
-    # # Get all activities
-    # activities = get_activities()
+    # Get all activities
+    activities = get_activities()
 
-    # activity_names = activities.keys()
-    # newActivities = []
+    activity_names = activities.keys()
+    # TODO: Figure out the order and crap with this.
+    activity_options = {}
+    new_activities = []
 
-    # # Created GUI
+    # Created GUI
 
-    # # https://stackoverflow.com/questions/47839813/python-tkinter-autocomplete-combobox-with-like-search
-    # root = tk.Tk()
+    # https://stackoverflow.com/questions/47839813/python-tkinter-autocomplete-combobox-with-like-search
+    root = tk.Tk()
+    root.title("Progression Desktop")
 
-    # entry = tk.Entry(root)
-    # entry.pack()
-    # entry.bind('<KeyRelease>', on_keyrelease)
+    mainframe = ttk.Frame(root, padding="3 3 12 12")
+    mainframe.grid(column=0, row=0, sticky=(tk.N, tk.W, tk.E, tk.S))
+    mainframe.columnconfigure(0, weight=1)
+    mainframe.rowconfigure(0, weight=1)
 
-    # listbox = tk.Listbox(root)
-    # listbox.pack()
-    # #listbox.bind('<Double-Button-1>', on_select)
+    entry = tk.Entry(mainframe)
+    entry.grid(column=1, row=1)
+    entry.bind('<KeyRelease>', on_keyrelease)
+
+    entry_listbox = tk.Listbox(mainframe)
+    entry_listbox.grid(column=1, row=2)
+    entry_listbox.bind('<Double-Button-1>', on_select)
     # listbox.bind('<<ListboxSelect>>', on_select)
-    # listbox_update(activity_names)
+    listbox_update(activity_names)
 
-    # root.mainloop()
+    selected_listbox = tk.Listbox(mainframe)
+    selected_listbox.grid(column=2, row=2)
+    selected_listbox.bind('<Double-Button-1>', on_deselect)
 
-    newActivities = [{'@type': 'MuscleActivity', 'custom': False, 'id': '26', 'instructions': 'Stand in a cable machine with one handle in each hand. The handles should be at knee height while hanging freely. Begin to pull them together and up as if you were hugging a tree with them. You should end up with the handles in front of you at chest level. Then finish the movement by letting them back out to your sides until your arms form two "L"s.', 'name': 'Cable Crossover (with Low Angle)', 'performanceTarget': {'groupIndex': -1, 'parameters': [{'allOut': False, 'index': 0, 'mark': 0, 'maxReps': 0, 'minReps': 0}, {'allOut': False, 'index': 1, 'mark': 0, 'maxReps': 0, 'minReps': 0}, {'allOut': False, 'index': 2, 'mark': 0, 'maxReps': 0, 'minReps': 0}, {'allOut': False, 'index': 3, 'mark': 0, 'maxReps': 0, 'minReps': 0}], 'restPerSet': 0}, 'equipment': 6, 'mainTargetMuscle': 5, 'type': 0}, {'@type': 'MuscleActivity', 'custom': False, 'id': '186', 'instructions': 'Place a box at your side and explode through your heels and jump up on it.', 'name': 'Lateral Box Jump', 'performanceTarget': {'groupIndex': -1, 'parameters': [{'allOut': False, 'index': 0, 'mark': 0, 'maxReps': 0, 'minReps': 0}, {'allOut': False, 'index': 1, 'mark': 0, 'maxReps': 0, 'minReps': 0}, {'allOut': False, 'index': 2, 'mark': 0, 'maxReps': 0, 'minReps': 0}, {'allOut': False, 'index': 3, 'mark': 0, 'maxReps': 0, 'minReps': 0}], 'restPerSet': 0}, 'equipment': 3, 'mainTargetMuscle': 6, 'secondaryTargetMuscles': [4], 'type': 0}, {
-        '@type': 'MuscleActivity', 'custom': False, 'id': '118', 'instructions': 'Adjust the machine so that your legs fit comfortably under the rack. Grab the bar and sit down with your legs under the rack. With a slight arch in your lower back begin pulling down towards your upper chest. After touching your chest with the bar, slowly return it until your arms and lats are fully stretched.', 'name': 'Machine Lat Pulldown', 'performanceTarget': {'groupIndex': -1, 'parameters': [{'allOut': False, 'index': 0, 'mark': 0, 'maxReps': 0, 'minReps': 0}, {'allOut': False, 'index': 1, 'mark': 0, 'maxReps': 0, 'minReps': 0}, {'allOut': False, 'index': 2, 'mark': 0, 'maxReps': 0, 'minReps': 0}, {'allOut': False, 'index': 3, 'mark': 0, 'maxReps': 0, 'minReps': 0}], 'restPerSet': 0}, 'equipment': 4, 'mainTargetMuscle': 2, 'secondaryTargetMuscles': [3], 'type': 0}, {'@type': 'MuscleActivity', 'custom': False, 'id': '128', 'instructions': 'Sit in a pulldown machine but rather than pulling towards your upper chest, pull the bar towards your neck. Stopping just before it touches it.', 'name': 'Machine Lat Pulldown (Behind the Neck)', 'performanceTarget': {'groupIndex': -1, 'parameters': [{'allOut': False, 'index': 0, 'mark': 0, 'maxReps': 0, 'minReps': 0}, {'allOut': False, 'index': 1, 'mark': 0, 'maxReps': 0, 'minReps': 0}, {'allOut': False, 'index': 2, 'mark': 0, 'maxReps': 0, 'minReps': 0}, {'allOut': False, 'index': 3, 'mark': 0, 'maxReps': 0, 'minReps': 0}], 'restPerSet': 0}, 'equipment': 4, 'mainTargetMuscle': 2, 'secondaryTargetMuscles': [3], 'type': 0}]
+    button = ttk.Button(mainframe, text="Finished", command=request_set_reps)
+    button.grid(column=1, row=3)
+
+    root.mainloop()
 
     # Add selected items to day
 
     add_day()
 
     print("Hello")
-
-    # root = Tk()
-    # app = App(root)
-    # root.mainloop()
