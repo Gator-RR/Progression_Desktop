@@ -2,7 +2,71 @@ import json
 import os
 import tkinter as tk
 from tkinter import ttk
+from tkinter import font as tkfont
 from tkinter import StringVar
+
+
+class ProgressionDesktop(tk.Tk):
+
+    def __init__(self, *args, **kwargs):
+        tk.Tk.__init__(self, *args, **kwargs)
+
+        self.title_font = tkfont.Font(
+            family='Helvetica', size=18, weight='bold')
+
+        # the container is where we'll stat a bunch of frames
+        # on top of each other, then the one we want visible
+        # will be raised above the others
+        container = tk.Frame(self)
+        container.pack(side='top', fill='both', expand=True)
+        container.grid_rowconfigure(0, weight=1)
+        container.grid_columnconfigure(0, weight=1)
+
+        self.frames = {}
+        for F in (ExcercisePage, DetailsPage):
+            page_name = F.__name__
+            frame = F(parent=container, conroller=self)
+            self.frames[page_name] = frame
+
+            # put all of the pages in the same location;
+            # the one on the top of the stacking order
+            # will be the one that is visible
+            frame.grid(row=0, column=0, sticky='nsew')
+
+        self.show_frame('ExercisePage')
+
+    def show_frame(self, page_name):
+        '''Show a frame for the given page name'''
+        frame = self.frames[page_name]
+        frame.tkraise()
+
+
+class ExercisePage(tk.Frame):
+
+    def __init__(self, parent, controller):
+        tk.Frame.__init__(self, parent)
+        self.controller = controller
+        label = tk.Label(self, text='Add Excercises',
+                         font=controller.title_font)
+        label.pack(side='top', fill='x', pady=10)
+
+        button1 = tk.Button(self, text='Finish',
+                            command=lambda: controller.show_frame('DetailsPage'))
+        button1.pack()
+
+
+class DetailsPage(tk.Frame):
+
+    def __init__(self, parent, controller):
+        tk.Frame.__init__(self, parent)
+        self.controller = controller
+        label = tk.Label(self, text='Enter Details',
+                        font=controller.title_font)
+        label.pack(side='top', fill='x',pady=10)
+        # TODO: this should close the window
+        button = tk.Button(self, text = 'Finished',
+                            command=lambda: controller.show_frame('ExercisePage'))
+        button.pack()
 
 
 def read_json(file_name):
@@ -90,7 +154,8 @@ def on_deselect(event):
     print('(event)  current:', event.widget.get(event.widget.curselection()))
     name = event.widget.get(event.widget.curselection())
     print('---')
-    new_activities[:] = [activity for activity in new_activities if not activity['name'] == name]
+    new_activities[:] = [
+        activity for activity in new_activities if not activity['name'] == name]
     selected_listbox_update()
 
 
@@ -118,6 +183,9 @@ if __name__ == '__main__':
     '''
         Launch GUI for progresson application
     '''
+
+    app = ProgressionDesktop()
+    app.mainloop()
     # Get all activities
     activities = get_activities()
 
