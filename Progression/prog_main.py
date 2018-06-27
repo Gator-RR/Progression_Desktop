@@ -70,8 +70,8 @@ def selected_listbox_update():
     selected_listbox.delete(0, 'end')
 
     # put new data
-    for item in activity_options:
-        selected_listbox.insert('end', item)
+    for item in new_activities:
+        selected_listbox.insert('end', item['name'])
 
 
 def on_select(event):
@@ -80,7 +80,7 @@ def on_select(event):
     print('(event)  current:', event.widget.get(event.widget.curselection()))
     name = event.widget.get(event.widget.curselection())
     print('---')
-    activity_options[name] = activities[name]
+    new_activities.append(activities[name])
     selected_listbox_update()
 
 
@@ -90,7 +90,7 @@ def on_deselect(event):
     print('(event)  current:', event.widget.get(event.widget.curselection()))
     name = event.widget.get(event.widget.curselection())
     print('---')
-    del activity_options[name]
+    new_activities[:] = [activity for activity in new_activities if not activity['name'] == name]
     selected_listbox_update()
 
 
@@ -109,6 +109,8 @@ def add_day():
 
 
 def request_set_reps():
+    mainframe.destroy()
+
     return
 
 
@@ -121,7 +123,6 @@ if __name__ == '__main__':
 
     activity_names = activities.keys()
     # TODO: Figure out the order and crap with this.
-    activity_options = {}
     new_activities = []
 
     # Created GUI
@@ -135,10 +136,16 @@ if __name__ == '__main__':
     mainframe.columnconfigure(0, weight=1)
     mainframe.rowconfigure(0, weight=1)
 
+    rep_frame = ttk.Frame(root, padding="3 3 12 12")
+    rep_frame.grid(column=0, row=0, sticky=(tk.N, tk.W, tk.E, tk.S))
+    rep_frame.columnconfigure(0, weight=1)
+    rep_frame.rowconfigure(0, weight=1)
+
     entry = tk.Entry(mainframe)
     entry.grid(column=1, row=1)
     entry.bind('<KeyRelease>', on_keyrelease)
 
+    # TODO: Add enter to trigger same functions
     entry_listbox = tk.Listbox(mainframe)
     entry_listbox.grid(column=1, row=2)
     entry_listbox.bind('<Double-Button-1>', on_select)
