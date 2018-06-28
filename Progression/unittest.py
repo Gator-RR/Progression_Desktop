@@ -11,8 +11,7 @@ import tkinter as tk                # python 3
 from tkinter import font as tkfont  # python 3
 # import Tkinter as tk     # python 2
 # import tkFont as tkfont  # python 2
-
-
+'''
 class SampleApp(tk.Tk):
 
     def __init__(self, *args, **kwargs):
@@ -43,7 +42,7 @@ class SampleApp(tk.Tk):
         self.show_frame("StartPage")
 
     def show_frame(self, page_name):
-        '''Show a frame for the given page name'''
+        # Show a frame for the given page name
         frame = self.frames[page_name]
         frame.tkraise()
 
@@ -94,3 +93,58 @@ class PageTwo(tk.Frame):
 if __name__ == "__main__":
     app = SampleApp()
     app.mainloop()
+
+'''
+
+
+    # Get all activities
+    activities = get_activities()
+
+    activity_names = activities.keys()
+    # TODO: Figure out the order and crap with this.
+    new_activities = []
+
+    # Created GUI
+
+    # https://stackoverflow.com/questions/47839813/python-tkinter-autocomplete-combobox-with-like-search
+    root = tk.Tk()
+    root.title("Progression Desktop")
+
+    mainframe = ttk.Frame(root, padding="3 3 12 12")
+    mainframe.grid(column=0, row=0, sticky=(tk.N, tk.W, tk.E, tk.S))
+    mainframe.columnconfigure(0, weight=1)
+    mainframe.rowconfigure(0, weight=1)
+
+    rep_frame = ttk.Frame(root, padding="3 3 12 12")
+    rep_frame.grid(column=0, row=0, sticky=(tk.N, tk.W, tk.E, tk.S))
+    rep_frame.columnconfigure(0, weight=1)
+    rep_frame.rowconfigure(0, weight=1)
+
+    entry = tk.Entry(mainframe)
+    entry.grid(column=1, row=1)
+    entry.bind('<KeyRelease>', on_keyrelease)
+
+    # TODO: Add enter to trigger same functions
+    entry_listbox = tk.Listbox(mainframe)
+    entry_listbox.grid(column=1, row=2)
+    entry_listbox.bind('<Double-Button-1>', on_select)
+    # listbox.bind('<<ListboxSelect>>', on_select)
+    listbox_update(activity_names)
+
+    selected_listbox = tk.Listbox(mainframe)
+    selected_listbox.grid(column=2, row=2)
+    selected_listbox.bind('<Double-Button-1>', on_deselect)
+
+    button = ttk.Button(mainframe, text="Finished", command=request_set_reps)
+    button.grid(column=1, row=3)
+
+    root.mainloop()
+
+    # Add selected items to day
+
+    add_day()
+
+    print("Hello")
+
+
+    # https://stackoverflow.com/questions/33646605/how-to-access-variables-from-different-classes-in-tkinter

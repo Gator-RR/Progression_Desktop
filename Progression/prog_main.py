@@ -9,6 +9,12 @@ from tkinter import StringVar
 class ProgressionDesktop(tk.Tk):
 
     def __init__(self, *args, **kwargs):
+        # Get activities ready
+        self.activities = self.get_activities()
+        self.activity_names = self.activities.keys()
+        self.new_activities = []
+
+        # GUI stuff
         tk.Tk.__init__(self, *args, **kwargs)
 
         self.title_font = tkfont.Font(
@@ -40,10 +46,26 @@ class ProgressionDesktop(tk.Tk):
         frame = self.frames[page_name]
         frame.tkraise()
 
+    def get_activities(self):
+        file_name = 'Progression\\ma.json'
+
+        ma = read_json(file_name)
+        activities_dict = {}
+        for elem in ma:
+            activities_dict[elem['name']] = elem
+
+        file_name = 'Progression\\ua.json'
+        ua = read_json(file_name)
+        for elem in ua:
+            activities_dict[elem['name']] = elem
+        return activities_dict
+
 
 class ExercisePage(tk.Frame):
 
     def __init__(self, parent, controller):
+
+        # Layout GUI
         tk.Frame.__init__(self, parent)
         self.controller = controller
         label = tk.Label(self, text='Add Excercises',
@@ -81,21 +103,6 @@ def read_json(file_name):
 def write_json(data):
     with open('data.json', 'w') as outputfile:
         json.dump(data, outputfile)
-
-
-def get_activities():
-    file_name = 'Progression\\ma.json'
-
-    ma = read_json(file_name)
-    activities_dict = {}
-    for elem in ma:
-        activities_dict[elem['name']] = elem
-
-    file_name = 'Progression\\ua.json'
-    ua = read_json(file_name)
-    for elem in ua:
-        activities_dict[elem['name']] = elem
-    return activities_dict
 
 
 def on_keyrelease(event):
@@ -186,51 +193,4 @@ if __name__ == '__main__':
 
     app = ProgressionDesktop()
     app.mainloop()
-    # Get all activities
-    activities = get_activities()
 
-    activity_names = activities.keys()
-    # TODO: Figure out the order and crap with this.
-    new_activities = []
-
-    # Created GUI
-
-    # https://stackoverflow.com/questions/47839813/python-tkinter-autocomplete-combobox-with-like-search
-    root = tk.Tk()
-    root.title("Progression Desktop")
-
-    mainframe = ttk.Frame(root, padding="3 3 12 12")
-    mainframe.grid(column=0, row=0, sticky=(tk.N, tk.W, tk.E, tk.S))
-    mainframe.columnconfigure(0, weight=1)
-    mainframe.rowconfigure(0, weight=1)
-
-    rep_frame = ttk.Frame(root, padding="3 3 12 12")
-    rep_frame.grid(column=0, row=0, sticky=(tk.N, tk.W, tk.E, tk.S))
-    rep_frame.columnconfigure(0, weight=1)
-    rep_frame.rowconfigure(0, weight=1)
-
-    entry = tk.Entry(mainframe)
-    entry.grid(column=1, row=1)
-    entry.bind('<KeyRelease>', on_keyrelease)
-
-    # TODO: Add enter to trigger same functions
-    entry_listbox = tk.Listbox(mainframe)
-    entry_listbox.grid(column=1, row=2)
-    entry_listbox.bind('<Double-Button-1>', on_select)
-    # listbox.bind('<<ListboxSelect>>', on_select)
-    listbox_update(activity_names)
-
-    selected_listbox = tk.Listbox(mainframe)
-    selected_listbox.grid(column=2, row=2)
-    selected_listbox.bind('<Double-Button-1>', on_deselect)
-
-    button = ttk.Button(mainframe, text="Finished", command=request_set_reps)
-    button.grid(column=1, row=3)
-
-    root.mainloop()
-
-    # Add selected items to day
-
-    add_day()
-
-    print("Hello")
