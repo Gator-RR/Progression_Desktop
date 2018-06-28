@@ -10,6 +10,7 @@ class ProgressionDesktop(tk.Tk):
 
     def __init__(self, *args, **kwargs):
         # Get activities ready
+        # TODO: Consider putting these all in a single shared_data dict
         self.activities = self.get_activities()
         self.activity_names = self.activities.keys()
         self.new_activities = []
@@ -71,6 +72,22 @@ class ExercisePage(tk.Frame):
         label = tk.Label(self, text='Add Excercises',
                          font=controller.title_font)
         label.pack(side='top', fill='x', pady=10)
+
+        entry = tk.Entry(self)
+        entry.pack()
+        # TODO: right now on_keyrelease is global, not sure where I should put it.  Probably in self
+        entry.bind('<KeyRelease>', on_keyrelease)
+
+        # TODO: Add enter to trigger same function
+        entry_listbox = tk.Listbox(self)
+        entry_listbox.pack()
+        # TODO: Global functions, should be moved to.. some class
+        entry_listbox.bind('<Double-Button-1>', on_select)
+        listbox_update(self.controller.activity_names)
+
+        selected_listbox = tk.Listbox(self)
+        selected_listbox.pack(side='right')
+        selected_listbox.bind('<Double-Button-1>', on_deselect)
 
         button1 = tk.Button(self, text='Finish',
                             command=lambda: controller.show_frame('DetailsPage'))
