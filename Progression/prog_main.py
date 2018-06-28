@@ -23,9 +23,9 @@ class ProgressionDesktop(tk.Tk):
         container.grid_columnconfigure(0, weight=1)
 
         self.frames = {}
-        for F in (ExcercisePage, DetailsPage):
+        for F in (ExercisePage, DetailsPage):
             page_name = F.__name__
-            frame = F(parent=container, conroller=self)
+            frame = F(parent=container, controller=self)
             self.frames[page_name] = frame
 
             # put all of the pages in the same location;
@@ -61,11 +61,11 @@ class DetailsPage(tk.Frame):
         tk.Frame.__init__(self, parent)
         self.controller = controller
         label = tk.Label(self, text='Enter Details',
-                        font=controller.title_font)
-        label.pack(side='top', fill='x',pady=10)
+                         font=controller.title_font)
+        label.pack(side='top', fill='x', pady=10)
         # TODO: this should close the window
-        button = tk.Button(self, text = 'Finished',
-                            command=lambda: controller.show_frame('ExercisePage'))
+        button = tk.Button(self, text='Finished',
+                           command=lambda: controller.show_frame('ExercisePage'))
         button.pack()
 
 
