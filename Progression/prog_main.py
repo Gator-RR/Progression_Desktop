@@ -50,16 +50,106 @@ class ProgressionDesktop(tk.Tk):
     def get_activities(self):
         file_name = 'Progression\\ma.json'
 
-        ma = read_json(file_name)
+        ma = self.read_json(file_name)
         activities_dict = {}
         for elem in ma:
             activities_dict[elem['name']] = elem
 
         file_name = 'Progression\\ua.json'
-        ua = read_json(file_name)
+        ua = self.read_json(file_name)
         for elem in ua:
             activities_dict[elem['name']] = elem
         return activities_dict
+
+    def read_json(self, file_name):
+        # TODO: Verify this is even the one I think I am calling
+        CWD = os.path.abspath('.')
+        input_file = os.path.join(CWD, file_name)
+        with open(input_file, 'r') as fid:
+            data = json.load(fid)
+        return data
+
+    def write_json(self, data):
+        with open('data.json', 'w') as outputfile:
+            json.dump(data, outputfile)
+
+    def on_keyrelease(self, event, listbox):
+
+        # get text from entry
+        value = event.widget.get()
+        value = value.strip().lower()
+
+        # get data from activit_names
+        if value == '':
+            data = self.activity_names
+        else:
+            data = []
+            for item in self.activity_names:
+                if value in item.lower():
+                    data.append(item)
+
+        # update data in listbox
+        # TODO: This is grabbing the wrong widget... needs to update listbox
+        self.listbox_update(listbox, data)
+
+    def listbox_update(self, listbox, data):
+        # delete previous data
+        listbox.delete(0, 'end')
+
+        # sorting data
+        data = sorted(data, key=str.lower)
+
+        # put new data
+        for item in data:
+            listbox.insert('end', item)
+
+    def selected_listbox_update(self):
+        # delete previous data
+        self.selected_listbox.delete(0, 'end')
+
+        # put new data
+        for item in self.new_activities:
+            self.selected_listbox.insert('end', item['name'])
+
+    def on_select(self, event):
+        # display element selected on list
+        print('(event) previous:', event.widget.get('active'))
+        print('(event)  current:', event.widget.get(
+            event.widget.curselection()))
+        name = event.widget.get(event.widget.curselection())
+        print('---')
+        self.new_activities.append(self.activities[name])
+        self.selected_listbox_update()
+
+    def on_deselect(self, event):
+        # display element selected on list
+        print('(event) previous:', event.widget.get('active'))
+        print('(event)  current:', event.widget.get(
+            event.widget.curselection()))
+        name = event.widget.get(event.widget.curselection())
+        print('---')
+        # TODO: Review this
+        self.new_activities[:] = [
+            activity for activity in self.new_activities if not activity['name'] == name]
+        self.selected_listbox_update()
+
+    def add_day(self):
+        up = self.read_json('Progression\\up.json')
+        quad_guy = [prog for prog in up if prog['name'] == 'Quad Guy']
+        day = quad_guy[0]['days'][-1].copy()
+        day['index'] += 1
+        # TODO:
+        day['name'] = "FIGURE OUT HOW TO GET THIS FROM UI"
+        day['activities'] = self.new_activities
+        quad_guy[0]['days'].append(day)
+        self.write_json(up)
+
+        print('Hello')
+
+    def request_set_reps(self):
+        self.destroy()
+
+        return
 
 
 class ExercisePage(tk.Frame):
@@ -74,20 +164,21 @@ class ExercisePage(tk.Frame):
         label.pack(side='top', fill='x', pady=10)
 
         entry = tk.Entry(self)
+        entry_listbox = tk.Listbox(self)
         entry.pack()
-        # TODO: right now on_keyrelease is global, not sure where I should put it.  Probably in self
-        entry.bind('<KeyRelease>', on_keyrelease)
+        entry.bind('<KeyRelease>', lambda event, entry_listbox=entry_listbox: self.controller.on_keyrelease(
+            listbox=entry_listbox))
 
         # TODO: Add enter to trigger same function
-        entry_listbox = tk.Listbox(self)
         entry_listbox.pack()
         # TODO: Global functions, should be moved to.. some class
-        entry_listbox.bind('<Double-Button-1>', on_select)
-        listbox_update(self.controller.activity_names)
+        entry_listbox.bind('<Double-Button-1>', self.controller.on_select)
+        self.controller.listbox_update(
+            listbox=entry_listbox, data=self.controller.activity_names)
 
         selected_listbox = tk.Listbox(self)
         selected_listbox.pack(side='right')
-        selected_listbox.bind('<Double-Button-1>', on_deselect)
+        selected_listbox.bind('<Double-Button-1>', self.controller.on_deselect)
 
         button1 = tk.Button(self, text='Finish',
                             command=lambda: controller.show_frame('DetailsPage'))
@@ -108,101 +199,6 @@ class DetailsPage(tk.Frame):
         button.pack()
 
 
-def read_json(file_name):
-    # TODO: Verify this is even the one I think I am calling
-    CWD = os.path.abspath('.')
-    input_file = os.path.join(CWD, file_name)
-    with open(input_file, 'r') as fid:
-        data = json.load(fid)
-    return data
-
-
-def write_json(data):
-    with open('data.json', 'w') as outputfile:
-        json.dump(data, outputfile)
-
-
-def on_keyrelease(event):
-
-    # get text from entry
-    value = event.widget.get()
-    value = value.strip().lower()
-
-    # get data from activit_names
-    if value == '':
-        data = activity_names
-    else:
-        data = []
-        for item in activity_names:
-            if value in item.lower():
-                data.append(item)
-
-    # update data in listbox
-    listbox_update(data)
-
-
-def listbox_update(data):
-    # delete previous data
-    entry_listbox.delete(0, 'end')
-
-    # sorting data
-    data = sorted(data, key=str.lower)
-
-    # put new data
-    for item in data:
-        entry_listbox.insert('end', item)
-
-
-def selected_listbox_update():
-    # delete previous data
-    selected_listbox.delete(0, 'end')
-
-    # put new data
-    for item in new_activities:
-        selected_listbox.insert('end', item['name'])
-
-
-def on_select(event):
-    # display element selected on list
-    print('(event) previous:', event.widget.get('active'))
-    print('(event)  current:', event.widget.get(event.widget.curselection()))
-    name = event.widget.get(event.widget.curselection())
-    print('---')
-    new_activities.append(activities[name])
-    selected_listbox_update()
-
-
-def on_deselect(event):
-    # display element selected on list
-    print('(event) previous:', event.widget.get('active'))
-    print('(event)  current:', event.widget.get(event.widget.curselection()))
-    name = event.widget.get(event.widget.curselection())
-    print('---')
-    new_activities[:] = [
-        activity for activity in new_activities if not activity['name'] == name]
-    selected_listbox_update()
-
-
-def add_day():
-    up = read_json('Progression\\up.json')
-    quad_guy = [prog for prog in up if prog['name'] == 'Quad Guy']
-    day = quad_guy[0]['days'][-1].copy()
-    day['index'] += 1
-    # TODO:
-    day['name'] = "FIGURE OUT HOW TO GET THIS FROM UI"
-    day['activities'] = new_activities
-    quad_guy[0]['days'].append(day)
-    write_json(up)
-
-    print('Hello')
-
-
-def request_set_reps():
-    mainframe.destroy()
-
-    return
-
-
 if __name__ == '__main__':
     '''
         Launch GUI for progresson application
@@ -210,4 +206,3 @@ if __name__ == '__main__':
 
     app = ProgressionDesktop()
     app.mainloop()
-
