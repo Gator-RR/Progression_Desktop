@@ -141,6 +141,7 @@ if __name__ == "__main__":
     root.mainloop()
 
     # Add selected items to day
+    # HEY LISTEN LISTEN, THE FIRST FRAME IS THE ONLY ONE THAT NEEDS TO UPDATE THE DANG LISTBOXES.. THEREFORE IT SHOULD OWN THEM!
 
     add_day()
 
