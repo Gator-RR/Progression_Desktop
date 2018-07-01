@@ -73,66 +73,6 @@ class ProgressionDesktop(tk.Tk):
         with open('data.json', 'w') as outputfile:
             json.dump(data, outputfile)
 
-    def on_keyrelease(self, event, listbox):
-
-        # get text from entry
-        value = event.widget.get()
-        value = value.strip().lower()
-
-        # get data from activit_names
-        if value == '':
-            data = self.activity_names
-        else:
-            data = []
-            for item in self.activity_names:
-                if value in item.lower():
-                    data.append(item)
-
-        # update data in listbox
-        # TODO: This is grabbing the wrong widget... needs to update listbox
-        self.listbox_update(listbox, data)
-
-    def listbox_update(self, listbox, data):
-        # delete previous data
-        listbox.delete(0, 'end')
-
-        # sorting data
-        data = sorted(data, key=str.lower)
-
-        # put new data
-        for item in data:
-            listbox.insert('end', item)
-
-    def selected_listbox_update(self):
-        # delete previous data
-        self.selected_listbox.delete(0, 'end')
-
-        # put new data
-        for item in self.new_activities:
-            self.selected_listbox.insert('end', item['name'])
-
-    def on_select(self, event):
-        # display element selected on list
-        print('(event) previous:', event.widget.get('active'))
-        print('(event)  current:', event.widget.get(
-            event.widget.curselection()))
-        name = event.widget.get(event.widget.curselection())
-        print('---')
-        self.new_activities.append(self.activities[name])
-        self.selected_listbox_update()
-
-    def on_deselect(self, event):
-        # display element selected on list
-        print('(event) previous:', event.widget.get('active'))
-        print('(event)  current:', event.widget.get(
-            event.widget.curselection()))
-        name = event.widget.get(event.widget.curselection())
-        print('---')
-        # TODO: Review this
-        self.new_activities[:] = [
-            activity for activity in self.new_activities if not activity['name'] == name]
-        self.selected_listbox_update()
-
     def add_day(self):
         up = self.read_json('Progression\\up.json')
         quad_guy = [prog for prog in up if prog['name'] == 'Quad Guy']
@@ -164,25 +104,83 @@ class ExercisePage(tk.Frame):
         label.pack(side='top', fill='x', pady=10)
 
         entry = tk.Entry(self)
-        entry_listbox = tk.Listbox(self)
         entry.pack()
-        entry.bind('<KeyRelease>', lambda event, entry_listbox=entry_listbox: self.controller.on_keyrelease(
-            listbox=entry_listbox))
+        entry.bind('<KeyRelease>', self.on_keyrelease)
 
+        self.entry_listbox = tk.Listbox(self)
         # TODO: Add enter to trigger same function
-        entry_listbox.pack()
+        self.entry_listbox.pack()
         # TODO: Global functions, should be moved to.. some class
-        entry_listbox.bind('<Double-Button-1>', self.controller.on_select)
-        self.controller.listbox_update(
-            listbox=entry_listbox, data=self.controller.activity_names)
+        self.entry_listbox.bind('<Double-Button-1>', self.on_select)
+        self.listbox_update(self.controller.activity_names)
 
-        selected_listbox = tk.Listbox(self)
-        selected_listbox.pack(side='right')
-        selected_listbox.bind('<Double-Button-1>', self.controller.on_deselect)
+        self.selected_listbox = tk.Listbox(self)
+        self.selected_listbox.pack(side='right')
+        self.selected_listbox.bind('<Double-Button-1>', self.on_deselect)
 
         button1 = tk.Button(self, text='Finish',
                             command=lambda: controller.show_frame('DetailsPage'))
         button1.pack()
+
+    def on_keyrelease(self, event):
+
+        # get text from entry
+        value = event.widget.get()
+        value = value.strip().lower()
+
+        # get data from activit_names
+        if value == '':
+            data = self.controller.activity_names
+        else:
+            data = []
+            for item in self.controller.activity_names:
+                if value in item.lower():
+                    data.append(item)
+
+        # update data in listbox
+        # TODO: This is grabbing the wrong widget... needs to update listbox
+        self.listbox_update(data)
+
+    def on_select(self, event):
+        # display element selected on list
+        print('(event) previous:', event.widget.get('active'))
+        print('(event)  current:', event.widget.get(
+            event.widget.curselection()))
+        name = event.widget.get(event.widget.curselection())
+        print('---')
+        self.controller.new_activities.append(self.controller.activities[name])
+        self.selected_listbox_update()
+
+    def listbox_update(self, data):
+        # delete previous data
+        self.entry_listbox.delete(0, 'end')
+
+        # sorting data
+        data = sorted(data, key=str.lower)
+
+        # put new data
+        for item in data:
+            self.entry_listbox.insert('end', item)
+
+    def on_deselect(self, event):
+        # display element selected on list
+        print('(event) previous:', event.widget.get('active'))
+        print('(event)  current:', event.widget.get(
+            event.widget.curselection()))
+        name = event.widget.get(event.widget.curselection())
+        print('---')
+        # TODO: Review this
+        self.controller.new_activities[:] = [
+            activity for activity in self.controller.new_activities if not activity['name'] == name]
+        self.selected_listbox_update()
+
+    def selected_listbox_update(self):
+        # delete previous data
+        self.selected_listbox.delete(0, 'end')
+
+        # put new data
+        for item in self.controller.new_activities:
+            self.selected_listbox.insert('end', item['name'])
 
 
 class DetailsPage(tk.Frame):
@@ -193,6 +191,16 @@ class DetailsPage(tk.Frame):
         label = tk.Label(self, text='Enter Details',
                          font=controller.title_font)
         label.pack(side='top', fill='x', pady=10)
+
+        # TODO: This is called before any activities are added
+        # move it to later
+        entry_list = []
+        for activity in self.controller.new_activities:
+            entry_list.append(tk.Entry(self))
+
+        for entry in entry_list:
+            entry.pack(side='top', fill='x', pady=10)
+
         # TODO: this should close the window
         button = tk.Button(self, text='Finished',
                            command=lambda: controller.show_frame('ExercisePage'))
