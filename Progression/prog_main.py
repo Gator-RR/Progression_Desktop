@@ -45,6 +45,10 @@ class ProgressionDesktop(tk.Tk):
     def show_frame(self, page_name):
         '''Show a frame for the given page name'''
         frame = self.frames[page_name]
+
+        if page_name == 'DetailsPage':
+            frame.update_entry()
+
         frame.tkraise()
 
     def get_activities(self):
@@ -78,13 +82,16 @@ class ProgressionDesktop(tk.Tk):
         quad_guy = [prog for prog in up if prog['name'] == 'Quad Guy']
         day = quad_guy[0]['days'][-1].copy()
         day['index'] += 1
-        # TODO:
-        day['name'] = "FIGURE OUT HOW TO GET THIS FROM UI"
-        day['activities'] = self.new_activities
+        day['name'] = self.frames['DetailsPage'].entry_name.get()
+        day['activities'] = self.set_activity_parameters(day)
         quad_guy[0]['days'].append(day)
         self.write_json(up)
 
         print('Hello')
+
+    def set_activity_parameters(self, day):
+        
+        return
 
     def request_set_reps(self):
         self.destroy()
@@ -128,7 +135,7 @@ class ExercisePage(tk.Frame):
         value = event.widget.get()
         value = value.strip().lower()
 
-        # get data from activit_names
+        # get data from activity_names
         if value == '':
             data = self.controller.activity_names
         else:
@@ -188,23 +195,32 @@ class DetailsPage(tk.Frame):
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
         self.controller = controller
+        self.entry_list = []
         label = tk.Label(self, text='Enter Details',
                          font=controller.title_font)
         label.pack(side='top', fill='x', pady=10)
 
-        # TODO: This is called before any activities are added
-        # move it to later
-        entry_list = []
-        for activity in self.controller.new_activities:
-            entry_list.append(tk.Entry(self))
+        self.entry_name = tk.Entry(self,text='Name',font=controller.title_font)
+        self.entry_name.insert(tk.END, 'name')
+        self.entry_name.pack(side='top', fill='x', pady=10)
 
-        for entry in entry_list:
-            entry.pack(side='top', fill='x', pady=10)
+        self.update_entry()
+
+        button_back = tk.Button(self, text='Back',
+                                command=lambda: controller.show_frame('ExercisePage'))
+        button_back.pack()
 
         # TODO: this should close the window
-        button = tk.Button(self, text='Finished',
-                           command=lambda: controller.show_frame('ExercisePage'))
-        button.pack()
+        button_finish = tk.Button(
+            self, text='Write', command=lambda: controller.add_day())
+        button_finish.pack()
+
+    def update_entry(self):
+        for activity in self.controller.new_activities:
+            self.entry_list.append(tk.Entry(self))
+
+        for entry in self.entry_list:
+            entry.pack(side='top', fill='x', pady=10)
 
 
 if __name__ == '__main__':
