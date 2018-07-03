@@ -76,7 +76,8 @@ class ProgressionDesktop(tk.Tk):
 
     def write_json(self, data):
         # TODO: Figure out how to append rather than re-write, will be much faster
-        with open('Progression\\ua.json', 'w') as outputfile:
+        # TODO: to use Unicode https://stackoverflow.com/questions/31306887/make-json-dumps-output-unicode-characters-properly-in-python
+        with open('Progression\\up.json', 'w') as outputfile:
             json.dump(data, outputfile)
 
     def add_day(self):
@@ -101,10 +102,10 @@ class ProgressionDesktop(tk.Tk):
             'minReps': 0
         }
 
-        for target in range(0,len(frame.entry_list)):
+        for target in range(0, len(frame.entry_list)):
             parameters = []
             set_rep = frame.entry_list[target].get().split()
-            for i in range(0,len(set_rep)):
+            for i in range(0, len(set_rep)):
                 parameters.append(parameter.copy())
                 parameters[-1]['maxReps'] = int(set_rep[i])
                 parameters[-1]['minReps'] = int(set_rep[i])
@@ -113,11 +114,6 @@ class ProgressionDesktop(tk.Tk):
             self.new_activities[target]['performanceTarget']['parameters'] = parameters
 
         return self.new_activities
-
-    def request_set_reps(self):
-        self.destroy()
-
-        return
 
 
 class ExercisePage(tk.Frame):

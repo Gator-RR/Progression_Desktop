@@ -29045,7 +29045,7 @@
                         "name": "Incline Dumbbell Curl",
                         "performanceTarget": {
                             "groupIndex": 1,
-                            "note": "Pause with​ 5 count twist after 8",
+                            "note": "Pause with\u00e2\u20ac\u2039 5 count twist after 8",
                             "parameters": [
                                 {
                                     "allOut": false,
@@ -31311,7 +31311,7 @@
                         "name": "Incline Dumbbell Curl",
                         "performanceTarget": {
                             "groupIndex": 1,
-                            "note": "Pause with​ 5 count twist after 8",
+                            "note": "Pause with\u00e2\u20ac\u2039 5 count twist after 8",
                             "parameters": [
                                 {
                                     "allOut": false,
@@ -33577,7 +33577,7 @@
                         "name": "Incline Dumbbell Curl",
                         "performanceTarget": {
                             "groupIndex": 1,
-                            "note": "Pause with​ 5 count twist after 8",
+                            "note": "Pause with\u00e2\u20ac\u2039 5 count twist after 8",
                             "parameters": [
                                 {
                                     "allOut": false,
@@ -36569,7 +36569,7 @@
                         "name": "Barbell Squat",
                         "performanceTarget": {
                             "groupIndex": 0,
-                            "note": "Pause​ at bottom, explode up",
+                            "note": "Pause\u00e2\u20ac\u2039 at bottom, explode up",
                             "parameters": [
                                 {
                                     "allOut": false,
@@ -38444,7 +38444,7 @@
                         "name": "Barbell Squat",
                         "performanceTarget": {
                             "groupIndex": 0,
-                            "note": "Pause​ at bottom, explode up",
+                            "note": "Pause\u00e2\u20ac\u2039 at bottom, explode up",
                             "parameters": [
                                 {
                                     "allOut": false,
@@ -39983,7 +39983,7 @@
                         "name": "Barbell Squat",
                         "performanceTarget": {
                             "groupIndex": 0,
-                            "note": "Pause​ at bottom, explode up",
+                            "note": "Pause\u00e2\u20ac\u2039 at bottom, explode up",
                             "parameters": [
                                 {
                                     "allOut": false,
@@ -41518,7 +41518,7 @@
                         "name": "Barbell Squat",
                         "performanceTarget": {
                             "groupIndex": 0,
-                            "note": "Pause​ at bottom, explode up",
+                            "note": "Pause\u00e2\u20ac\u2039 at bottom, explode up",
                             "parameters": [
                                 {
                                     "allOut": false,
@@ -56661,61 +56661,6 @@
                 "activities": [
                     {
                         "@type": "MuscleActivity",
-                        "custom": true,
-                        "id": "77a8d3e4-2dce-4dac-9306-9a70e9b6dbb2",
-                        "instructions": "go to the bathroom",
-                        "name": "Pooop",
-                        "performanceTarget": {
-                            "groupIndex": -1,
-                            "parameters": [
-                                {
-                                    "allOut": false,
-                                    "index": 0,
-                                    "mark": 0,
-                                    "maxReps": 0,
-                                    "minReps": 0
-                                },
-                                {
-                                    "allOut": false,
-                                    "index": 1,
-                                    "mark": 0,
-                                    "maxReps": 0,
-                                    "minReps": 0
-                                },
-                                {
-                                    "allOut": false,
-                                    "index": 2,
-                                    "mark": 0,
-                                    "maxReps": 0,
-                                    "minReps": 0
-                                },
-                                {
-                                    "allOut": false,
-                                    "index": 3,
-                                    "mark": 0,
-                                    "maxReps": 0,
-                                    "minReps": 0
-                                }
-                            ],
-                            "restPerSet": 0
-                        },
-                        "equipment": 0,
-                        "mainTargetMuscle": 2,
-                        "secondaryTargetMuscles": [
-                            6,
-                            8
-                        ],
-                        "type": 0
-                    }
-                ],
-                "index": 2,
-                "name": "Testing testing",
-                "type": 0
-            },
-            {
-                "activities": [
-                    {
-                        "@type": "MuscleActivity",
                         "custom": false,
                         "id": "233",
                         "instructions": "Stand up in a smith machine with a plate or some elevated object on the floor in front of you. Stand on it with the front of your foot and push yourself up through your foot. Then lower yourself back down. Tip: Stop for 1 second at the bottom of the movement.",
@@ -57134,8 +57079,477 @@
                         "type": 0
                     }
                 ],
-                "index": 3,
+                "index": 2,
                 "name": "Calves/Abs/Forearms",
+                "type": 0
+            },
+            {
+                "activities": [
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": false,
+                        "id": "22",
+                        "instructions": "Lie down on a regular bench with one dumbbell in each hand. Get the dumbbells in position above your chest and then begin the movement by lowering them out to your sides. You can imagine yourself hugging a giant tree on the way up, and then letting go as you lower them down. Go all the way down until your elbows are at the same level as your body. Tip: Squeeze your chest together at the top of the movement as if you were squeezing a football!",
+                        "name": "Dumbbell Fly",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 8,
+                                    "minReps": 8
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 8,
+                                    "minReps": 8
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 8,
+                                    "minReps": 8
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 3,
+                                    "mark": 0,
+                                    "maxReps": 8,
+                                    "minReps": 8
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 4,
+                                    "mark": 0,
+                                    "maxReps": 16,
+                                    "minReps": 16
+                                }
+                            ],
+                            "restPerSet": 0
+                        },
+                        "equipment": 2,
+                        "mainTargetMuscle": 5,
+                        "type": 0
+                    },
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": false,
+                        "id": "62",
+                        "instructions": "Stand up and grab a cable handle. Raise it to your side until your arm is at shoulder level.",
+                        "name": "Cable Side Raise",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 3,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 4,
+                                    "mark": 0,
+                                    "maxReps": 12,
+                                    "minReps": 12
+                                }
+                            ],
+                            "restPerSet": 0
+                        },
+                        "equipment": 6,
+                        "mainTargetMuscle": 7,
+                        "type": 0
+                    },
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": false,
+                        "id": "85",
+                        "instructions": "Sit on a bench with one dumbbell in each hand at shoulder level. Press the dumbbells up over your head and then lower them back down until they're at shoulder level again.",
+                        "name": "Dumbbell Shoulder Press (Seated)",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 4,
+                                    "minReps": 4
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 4,
+                                    "minReps": 4
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 4,
+                                    "minReps": 4
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 3,
+                                    "mark": 0,
+                                    "maxReps": 4,
+                                    "minReps": 4
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 4,
+                                    "mark": 0,
+                                    "maxReps": 8,
+                                    "minReps": 8
+                                }
+                            ],
+                            "restPerSet": 0
+                        },
+                        "equipment": 2,
+                        "mainTargetMuscle": 7,
+                        "secondaryTargetMuscles": [
+                            8
+                        ],
+                        "type": 0
+                    },
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": false,
+                        "id": "87",
+                        "instructions": "Stand in a cable machine and grab the handle near one of your sides at a time. Pull it forward until it's at shoulder height and then lower it back down.",
+                        "name": "Cable Front Raise",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 4,
+                                    "minReps": 4
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 4,
+                                    "minReps": 4
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 4,
+                                    "minReps": 4
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 3,
+                                    "mark": 0,
+                                    "maxReps": 4,
+                                    "minReps": 4
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 4,
+                                    "mark": 0,
+                                    "maxReps": 8,
+                                    "minReps": 8
+                                }
+                            ],
+                            "restPerSet": 0
+                        },
+                        "equipment": 6,
+                        "mainTargetMuscle": 7,
+                        "type": 0
+                    },
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": false,
+                        "id": "60",
+                        "instructions": "Stand with one dumbbell in each hand so that they are touching your sides. While keeping your arms almost straight, raise the dumbbells up to the sides until they are just below shoulder level.",
+                        "name": "Dumbbell Side Raise",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 15,
+                                    "minReps": 15
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 12,
+                                    "minReps": 12
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 10,
+                                    "minReps": 10
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 3,
+                                    "mark": 0,
+                                    "maxReps": 10,
+                                    "minReps": 10
+                                }
+                            ],
+                            "restPerSet": 0
+                        },
+                        "equipment": 2,
+                        "mainTargetMuscle": 7,
+                        "type": 0
+                    },
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": false,
+                        "id": "53",
+                        "instructions": "Sit comfortably in the machine with your upper arms resting against the padding. Grab onto the handles and curl the weight all the way up, and then lower it back down slowly until your arms are fully stretched.",
+                        "name": "Machine Preacher Curl",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 8,
+                                    "minReps": 8
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 8,
+                                    "minReps": 8
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 8,
+                                    "minReps": 8
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 3,
+                                    "mark": 0,
+                                    "maxReps": 8,
+                                    "minReps": 8
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 4,
+                                    "mark": 0,
+                                    "maxReps": 16,
+                                    "minReps": 16
+                                }
+                            ],
+                            "restPerSet": 0
+                        },
+                        "equipment": 4,
+                        "mainTargetMuscle": 3,
+                        "type": 0
+                    },
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": false,
+                        "id": "34",
+                        "instructions": "Stand up with one dumbbell in each hand. Grab them as if you were grabbing two bottles so that your palms are facing inwards. Keep your palms facing inwards and alternate between the dumbbells as you curl one at a time all the way up, then lower it back down.",
+                        "name": "Alternating Dumbbell Hammer Curl",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 3,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 4,
+                                    "mark": 0,
+                                    "maxReps": 12,
+                                    "minReps": 12
+                                }
+                            ],
+                            "restPerSet": 0
+                        },
+                        "equipment": 2,
+                        "mainTargetMuscle": 3,
+                        "type": 0
+                    },
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": false,
+                        "id": "29",
+                        "instructions": "Stand up with one dumbbell in each hand. Keep your elbows tucked in at your sides as you curl the dumbbells up until they're at shoulder level. Then lower them back down to the sides of your thighs.",
+                        "name": "Dumbbell Curl",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 4,
+                                    "minReps": 4
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 4,
+                                    "minReps": 4
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 4,
+                                    "minReps": 4
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 3,
+                                    "mark": 0,
+                                    "maxReps": 4,
+                                    "minReps": 4
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 4,
+                                    "mark": 0,
+                                    "maxReps": 8,
+                                    "minReps": 8
+                                }
+                            ],
+                            "restPerSet": 0
+                        },
+                        "equipment": 2,
+                        "mainTargetMuscle": 3,
+                        "type": 0
+                    },
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": false,
+                        "id": "306",
+                        "instructions": "Grab the cable with both hands pointing in towards each other. Keep your back straight and elbows tucked in at your sides and begin the movement by curling the weight up to shoulder level. Pause for a second and lower it back down until your arms are fully extended.",
+                        "name": "Cable Curl (With Hammer Grip)",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 10,
+                                    "minReps": 10
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 10,
+                                    "minReps": 10
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 8,
+                                    "minReps": 8
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 3,
+                                    "mark": 0,
+                                    "maxReps": 8,
+                                    "minReps": 8
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 4,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 5,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                }
+                            ],
+                            "restPerSet": 0
+                        },
+                        "equipment": 6,
+                        "mainTargetMuscle": 3,
+                        "type": 0
+                    }
+                ],
+                "index": 3,
+                "name": "Shoulders/Biceps",
                 "type": 0
             }
         ],
