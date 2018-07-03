@@ -46,6 +46,7 @@ class ProgressionDesktop(tk.Tk):
         '''Show a frame for the given page name'''
         frame = self.frames[page_name]
 
+        # TODO: I hate this
         if page_name == 'DetailsPage':
             frame.update_entry()
 
@@ -74,7 +75,8 @@ class ProgressionDesktop(tk.Tk):
         return data
 
     def write_json(self, data):
-        with open('data.json', 'w') as outputfile:
+        # TODO: Figure out how to append rather than re-write, will be much faster
+        with open('Progression\\ua.json', 'w') as outputfile:
             json.dump(data, outputfile)
 
     def add_day(self):
@@ -83,15 +85,34 @@ class ProgressionDesktop(tk.Tk):
         day = quad_guy[0]['days'][-1].copy()
         day['index'] += 1
         day['name'] = self.frames['DetailsPage'].entry_name.get()
-        day['activities'] = self.set_activity_parameters(day)
+        day['activities'] = self.set_activity_parameters()
         quad_guy[0]['days'].append(day)
         self.write_json(up)
 
-        print('Hello')
+        self.destroy()
 
-    def set_activity_parameters(self, day):
-        
-        return
+    def set_activity_parameters(self):
+        frame = self.frames['DetailsPage']
+        parameter = {
+            'allOut': False,
+            'index': 0,
+            'mark': 0,
+            'maxReps': 0,
+            'minReps': 0
+        }
+
+        for target in range(0,len(frame.entry_list)):
+            parameters = []
+            set_rep = frame.entry_list[target].get().split()
+            for i in range(0,len(set_rep)):
+                parameters.append(parameter.copy())
+                parameters[-1]['maxReps'] = int(set_rep[i])
+                parameters[-1]['minReps'] = int(set_rep[i])
+                parameters[-1]['index'] = i
+
+            self.new_activities[target]['performanceTarget']['parameters'] = parameters
+
+        return self.new_activities
 
     def request_set_reps(self):
         self.destroy()
@@ -200,7 +221,8 @@ class DetailsPage(tk.Frame):
                          font=controller.title_font)
         label.pack(side='top', fill='x', pady=10)
 
-        self.entry_name = tk.Entry(self,text='Name',font=controller.title_font)
+        self.entry_name = tk.Entry(
+            self, text='Name', font=controller.title_font)
         self.entry_name.insert(tk.END, 'name')
         self.entry_name.pack(side='top', fill='x', pady=10)
 
@@ -218,9 +240,8 @@ class DetailsPage(tk.Frame):
     def update_entry(self):
         for activity in self.controller.new_activities:
             self.entry_list.append(tk.Entry(self))
-
-        for entry in self.entry_list:
-            entry.pack(side='top', fill='x', pady=10)
+            self.entry_list[-1].insert(tk.END, activity['name'])
+            self.entry_list[-1].pack(side='top', fill='x', pady=10)
 
 
 if __name__ == '__main__':
