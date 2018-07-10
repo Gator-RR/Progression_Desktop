@@ -56418,6 +56418,784 @@
                     {
                         "@type": "MuscleActivity",
                         "custom": false,
+                        "id": "276",
+                        "instructions": "Sit down in a pulldown machine with the paddings adjusted so that they comfortably hold your legs down when you're holding the bar. Grab the wide pulldown bar with your palms facing forward at a little more than shoulder width apart. Slightly lean back so that you arch your lower back and puff your chest up, then pull the bar down by drawing your shoulders and upper arms down and back. Once the bar touches your chest, slowly begin to raise the bar back to the starting position, allowing your lat muscles to stretch out more the further up you go.",
+                        "name": "Wide-Grip Machine Lat Pulldown",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 12,
+                                    "minReps": 12
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 12,
+                                    "minReps": 12
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 12,
+                                    "minReps": 12
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 3,
+                                    "mark": 0,
+                                    "maxReps": 12,
+                                    "minReps": 12
+                                }
+                            ],
+                            "restPerSet": 0,
+                            "note": " 4:0:1:0"
+                        },
+                        "equipment": 4,
+                        "mainTargetMuscle": 2,
+                        "secondaryTargetMuscles": [
+                            3
+                        ],
+                        "type": 0
+                    },
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": false,
+                        "id": "128",
+                        "instructions": "Sit in a pulldown machine but rather than pulling towards your upper chest, pull the bar towards your neck. Stopping just before it touches it.",
+                        "name": "Machine Lat Pulldown (Behind the Neck)",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 3,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                }
+                            ],
+                            "restPerSet": 0,
+                            "note": " 1:4:1:4"
+                        },
+                        "equipment": 4,
+                        "mainTargetMuscle": 2,
+                        "secondaryTargetMuscles": [
+                            3
+                        ],
+                        "type": 0
+                    },
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": false,
+                        "id": "125",
+                        "instructions": "Stand in a pulldown machine and grab the bar at a shoulder wide width. Begin pushing downwards with your arms straight throughout the movement, stop when you're about to reach your thighs.",
+                        "name": "Straight-Arm Machine Lat Pulldown",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 20,
+                                    "minReps": 20
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 20,
+                                    "minReps": 20
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 20,
+                                    "minReps": 20
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 3,
+                                    "mark": 0,
+                                    "maxReps": 20,
+                                    "minReps": 20
+                                }
+                            ],
+                            "restPerSet": 0
+                        },
+                        "equipment": 4,
+                        "mainTargetMuscle": 2,
+                        "type": 0
+                    },
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": false,
+                        "id": "72",
+                        "instructions": "Grab a dumbbell in each hand and bend over with a straight back. Pull the dumbbells towards your shoulders and lower them back down.",
+                        "name": "Dumbbell Rear Delt Row",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 12,
+                                    "minReps": 12
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 12,
+                                    "minReps": 12
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 12,
+                                    "minReps": 12
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 3,
+                                    "mark": 0,
+                                    "maxReps": 12,
+                                    "minReps": 12
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 4,
+                                    "mark": 0,
+                                    "maxReps": 12,
+                                    "minReps": 12
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 5,
+                                    "mark": 0,
+                                    "maxReps": 12,
+                                    "minReps": 12
+                                }
+                            ],
+                            "restPerSet": 0,
+                            "note": " Chest supported on incline, hammer into underhand grip, 4:0:1:0"
+                        },
+                        "equipment": 2,
+                        "mainTargetMuscle": 7,
+                        "secondaryTargetMuscles": [
+                            3
+                        ],
+                        "type": 0
+                    },
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": false,
+                        "id": "110",
+                        "instructions": "Place a dumbbell on the floor and position yourself over a bench with one knee on the bench and the other one on the floor. Bend over forward with a straight back, flex your abs and grab the dumbbell. Begin pulling it to your side towards your abs. Then lower it back down.",
+                        "name": "Single-Arm Dumbbell Row on Bench",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 8,
+                                    "minReps": 8
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 8,
+                                    "minReps": 8
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 8,
+                                    "minReps": 8
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 3,
+                                    "mark": 0,
+                                    "maxReps": 8,
+                                    "minReps": 8
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 4,
+                                    "mark": 0,
+                                    "maxReps": 8,
+                                    "minReps": 8
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 5,
+                                    "mark": 0,
+                                    "maxReps": 8,
+                                    "minReps": 8
+                                }
+                            ],
+                            "restPerSet": 0,
+                            "note": "1:2:1:2"
+                        },
+                        "equipment": 2,
+                        "mainTargetMuscle": 2,
+                        "secondaryTargetMuscles": [
+                            3
+                        ],
+                        "type": 0
+                    },
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": false,
+                        "id": "112",
+                        "instructions": "Sit down on a bench in front of a cable machine. Pull the handle towards your lower belly while keeping your back straight. Then slowly let the handle back and let your arms stretch out fully.",
+                        "name": "Cable Row",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 20,
+                                    "minReps": 20
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 20,
+                                    "minReps": 20
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 20,
+                                    "minReps": 20
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 3,
+                                    "mark": 0,
+                                    "maxReps": 20,
+                                    "minReps": 20
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 4,
+                                    "mark": 0,
+                                    "maxReps": 20,
+                                    "minReps": 20
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 5,
+                                    "mark": 0,
+                                    "maxReps": 20,
+                                    "minReps": 20
+                                }
+                            ],
+                            "restPerSet": 0
+                        },
+                        "equipment": 6,
+                        "mainTargetMuscle": 2,
+                        "secondaryTargetMuscles": [
+                            3
+                        ],
+                        "type": 0
+                    },
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": false,
+                        "id": "230",
+                        "instructions": "Stand up in the machine with the pads on your shoulders, unrack the weight and lower it all the way down so that you feel a good stretch in your calves. Push it all the way up and then lower it back down slowly, pausing at the bottom for a second or two to avoid pushing with your achilles heel.",
+                        "name": "Machine Calf Raise",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 3,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 4,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 5,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                }
+                            ],
+                            "restPerSet": 0,
+                            "note": "toes pointed in"
+                        },
+                        "equipment": 4,
+                        "mainTargetMuscle": 4,
+                        "type": 0
+                    },
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": false,
+                        "id": "230",
+                        "instructions": "Stand up in the machine with the pads on your shoulders, unrack the weight and lower it all the way down so that you feel a good stretch in your calves. Push it all the way up and then lower it back down slowly, pausing at the bottom for a second or two to avoid pushing with your achilles heel.",
+                        "name": "Machine Calf Raise",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 3,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 4,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 5,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                }
+                            ],
+                            "restPerSet": 0,
+                            "note": "toes pointed in"
+                        },
+                        "equipment": 4,
+                        "mainTargetMuscle": 4,
+                        "type": 0
+                    }
+                ],
+                "index": 5,
+                "name": "BACK/CALF",
+                "type": 0
+            },
+            {
+                "activities": [
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": false,
+                        "id": "150",
+                        "instructions": "Put the barbell on your upper back and squat down until your thighs are parallel to the floor. Then stand back up. Keep your back straight and abs flexed throughout the movement.",
+                        "name": "Barbell Squat",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 12,
+                                    "minReps": 12
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 12,
+                                    "minReps": 12
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 12,
+                                    "minReps": 12
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 3,
+                                    "mark": 0,
+                                    "maxReps": 12,
+                                    "minReps": 12
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 4,
+                                    "mark": 0,
+                                    "maxReps": 12,
+                                    "minReps": 12
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 5,
+                                    "mark": 0,
+                                    "maxReps": 12,
+                                    "minReps": 12
+                                }
+                            ],
+                            "restPerSet": 0,
+                            "note": "inside should width stance 4:4:1:0"
+                        },
+                        "equipment": 1,
+                        "mainTargetMuscle": 6,
+                        "secondaryTargetMuscles": [
+                            1,
+                            4
+                        ],
+                        "type": 0
+                    },
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": false,
+                        "id": "169",
+                        "instructions": "Adjust the machine so that you're sitting comfortably and the seat ends just before your knee. Fully extend your legs while keeping the rest of your body stationary, then lower them back down to the starting position.",
+                        "name": "Machine Leg Extension",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 3,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 4,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 5,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                }
+                            ],
+                            "restPerSet": 0,
+                            "note": " 1:4:1:4"
+                        },
+                        "equipment": 4,
+                        "mainTargetMuscle": 6,
+                        "type": 0
+                    },
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": false,
+                        "id": "170",
+                        "instructions": "Sit down in the machine and put your feet up against the plate as if you were doing a Squat. Unrack the weight and lower it down until your knee is at a 90 degree angle, then push it back up. Stop just before your legs are fully straight to relieve your knees from extra stress.",
+                        "name": "Machine Leg Press",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 30,
+                                    "minReps": 30
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 30,
+                                    "minReps": 30
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 30,
+                                    "minReps": 30
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 3,
+                                    "mark": 0,
+                                    "maxReps": 30,
+                                    "minReps": 30
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 4,
+                                    "mark": 0,
+                                    "maxReps": 30,
+                                    "minReps": 30
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 5,
+                                    "mark": 0,
+                                    "maxReps": 30,
+                                    "minReps": 30
+                                }
+                            ],
+                            "restPerSet": 0
+                        },
+                        "equipment": 4,
+                        "mainTargetMuscle": 6,
+                        "secondaryTargetMuscles": [
+                            4,
+                            1
+                        ],
+                        "type": 0
+                    },
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": false,
+                        "id": "167",
+                        "instructions": "The technique is identical to a regular Squat, but with extra stability from the machine. Stand in the machine with the shoulder pads on your shoulders, unrack the weight and sit down until your thighs are parallel to the floor, then stand back up.",
+                        "name": "Machine Hack Squat",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 30,
+                                    "minReps": 30
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 30,
+                                    "minReps": 30
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 30,
+                                    "minReps": 30
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 3,
+                                    "mark": 0,
+                                    "maxReps": 30,
+                                    "minReps": 30
+                                }
+                            ],
+                            "restPerSet": 0,
+                            "note": " inside shoulder width stance"
+                        },
+                        "equipment": 4,
+                        "mainTargetMuscle": 6,
+                        "secondaryTargetMuscles": [
+                            4,
+                            1
+                        ],
+                        "type": 0
+                    },
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": false,
+                        "id": "187",
+                        "instructions": "Sit in the machine and adjust it so that you feel a minor stretch as you put your legs into the starting position. Push your legs together and then slowly let them back out again until you return to the starting position.",
+                        "name": "Machine Thigh Adduction (In)",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 50,
+                                    "minReps": 50
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 50,
+                                    "minReps": 50
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 50,
+                                    "minReps": 50
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 3,
+                                    "mark": 0,
+                                    "maxReps": 50,
+                                    "minReps": 50
+                                }
+                            ],
+                            "restPerSet": 0
+                        },
+                        "equipment": 4,
+                        "mainTargetMuscle": 6,
+                        "type": 0
+                    },
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": false,
+                        "id": "188",
+                        "instructions": "Sit comfortably in the machine and begin the movement by pushing your legs out to your sides as far as you can. Then return them to the starting position. All of this while keeping your upper body stationary.",
+                        "name": "Machine Thigh Abduction (Out)",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 50,
+                                    "minReps": 50
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 50,
+                                    "minReps": 50
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 50,
+                                    "minReps": 50
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 3,
+                                    "mark": 0,
+                                    "maxReps": 50,
+                                    "minReps": 50
+                                }
+                            ],
+                            "restPerSet": 0
+                        },
+                        "equipment": 4,
+                        "mainTargetMuscle": 6,
+                        "type": 0
+                    }
+                ],
+                "index": 5,
+                "name": "QUADS/ADDUCTORS/ABDUCTORS",
+                "type": 0
+            },
+            {
+                "activities": [
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": false,
                         "id": "125",
                         "instructions": "Stand in a pulldown machine and grab the bar at a shoulder wide width. Begin pushing downwards with your arms straight throughout the movement, stop when you're about to reach your thighs.",
                         "name": "Straight-Arm Machine Lat Pulldown",
@@ -57912,69 +58690,6 @@
                     {
                         "@type": "MuscleActivity",
                         "custom": false,
-                        "id": "150",
-                        "instructions": "Put the barbell on your upper back and squat down until your thighs are parallel to the floor. Then stand back up. Keep your back straight and abs flexed throughout the movement.",
-                        "name": "Barbell Squat",
-                        "performanceTarget": {
-                            "groupIndex": -1,
-                            "parameters": [
-                                {
-                                    "allOut": false,
-                                    "index": 0,
-                                    "mark": 0,
-                                    "maxReps": 12,
-                                    "minReps": 12
-                                },
-                                {
-                                    "allOut": false,
-                                    "index": 1,
-                                    "mark": 0,
-                                    "maxReps": 12,
-                                    "minReps": 12
-                                },
-                                {
-                                    "allOut": false,
-                                    "index": 2,
-                                    "mark": 0,
-                                    "maxReps": 12,
-                                    "minReps": 12
-                                },
-                                {
-                                    "allOut": false,
-                                    "index": 3,
-                                    "mark": 0,
-                                    "maxReps": 12,
-                                    "minReps": 12
-                                },
-                                {
-                                    "allOut": false,
-                                    "index": 4,
-                                    "mark": 0,
-                                    "maxReps": 12,
-                                    "minReps": 12
-                                },
-                                {
-                                    "allOut": false,
-                                    "index": 5,
-                                    "mark": 0,
-                                    "maxReps": 12,
-                                    "minReps": 12
-                                }
-                            ],
-                            "restPerSet": 0,
-                            "note": "inside should width stance 4:4:1:0"
-                        },
-                        "equipment": 1,
-                        "mainTargetMuscle": 6,
-                        "secondaryTargetMuscles": [
-                            1,
-                            4
-                        ],
-                        "type": 0
-                    },
-                    {
-                        "@type": "MuscleActivity",
-                        "custom": false,
                         "id": "169",
                         "instructions": "Adjust the machine so that you're sitting comfortably and the seat ends just before your knee. Fully extend your legs while keeping the rest of your body stationary, then lower them back down to the starting position.",
                         "name": "Machine Leg Extension",
@@ -57985,88 +58700,29 @@
                                     "allOut": false,
                                     "index": 0,
                                     "mark": 0,
-                                    "maxReps": 6,
-                                    "minReps": 6
+                                    "maxReps": 50,
+                                    "minReps": 50
                                 },
                                 {
                                     "allOut": false,
                                     "index": 1,
                                     "mark": 0,
-                                    "maxReps": 6,
-                                    "minReps": 6
+                                    "maxReps": 50,
+                                    "minReps": 50
                                 },
                                 {
                                     "allOut": false,
                                     "index": 2,
                                     "mark": 0,
-                                    "maxReps": 6,
-                                    "minReps": 6
+                                    "maxReps": 40,
+                                    "minReps": 40
                                 },
                                 {
                                     "allOut": false,
                                     "index": 3,
                                     "mark": 0,
-                                    "maxReps": 6,
-                                    "minReps": 6
-                                },
-                                {
-                                    "allOut": false,
-                                    "index": 4,
-                                    "mark": 0,
-                                    "maxReps": 6,
-                                    "minReps": 6
-                                },
-                                {
-                                    "allOut": false,
-                                    "index": 5,
-                                    "mark": 0,
-                                    "maxReps": 6,
-                                    "minReps": 6
-                                }
-                            ],
-                            "restPerSet": 0,
-                            "note": " 1:4:1:4"
-                        },
-                        "equipment": 4,
-                        "mainTargetMuscle": 6,
-                        "type": 0
-                    },
-                    {
-                        "@type": "MuscleActivity",
-                        "custom": false,
-                        "id": "170",
-                        "instructions": "Sit down in the machine and put your feet up against the plate as if you were doing a Squat. Unrack the weight and lower it down until your knee is at a 90 degree angle, then push it back up. Stop just before your legs are fully straight to relieve your knees from extra stress.",
-                        "name": "Machine Leg Press",
-                        "performanceTarget": {
-                            "groupIndex": -1,
-                            "parameters": [
-                                {
-                                    "allOut": false,
-                                    "index": 0,
-                                    "mark": 0,
-                                    "maxReps": 30,
-                                    "minReps": 30
-                                },
-                                {
-                                    "allOut": false,
-                                    "index": 1,
-                                    "mark": 0,
-                                    "maxReps": 30,
-                                    "minReps": 30
-                                },
-                                {
-                                    "allOut": false,
-                                    "index": 2,
-                                    "mark": 0,
-                                    "maxReps": 30,
-                                    "minReps": 30
-                                },
-                                {
-                                    "allOut": false,
-                                    "index": 3,
-                                    "mark": 0,
-                                    "maxReps": 30,
-                                    "minReps": 30
+                                    "maxReps": 40,
+                                    "minReps": 40
                                 },
                                 {
                                     "allOut": false,
@@ -58087,6 +58743,127 @@
                         },
                         "equipment": 4,
                         "mainTargetMuscle": 6,
+                        "type": 0
+                    },
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": false,
+                        "id": "151",
+                        "instructions": "Position the barbell just behind your legs. Squat down and grab it at a shoulder wide grip. Stand up with the barbell and then lower it back down to the floor. Keep your back straight and abs flexed throughout the movement.",
+                        "name": "Barbell Hack Squat",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 8,
+                                    "minReps": 8
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 8,
+                                    "minReps": 8
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 8,
+                                    "minReps": 8
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 3,
+                                    "mark": 0,
+                                    "maxReps": 8,
+                                    "minReps": 8
+                                }
+                            ],
+                            "restPerSet": 0,
+                            "note": " Platz 4:0:1:0"
+                        },
+                        "equipment": 1,
+                        "mainTargetMuscle": 6,
+                        "secondaryTargetMuscles": [
+                            1
+                        ],
+                        "type": 0
+                    },
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": false,
+                        "id": "170",
+                        "instructions": "Sit down in the machine and put your feet up against the plate as if you were doing a Squat. Unrack the weight and lower it down until your knee is at a 90 degree angle, then push it back up. Stop just before your legs are fully straight to relieve your knees from extra stress.",
+                        "name": "Machine Leg Press",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 20,
+                                    "minReps": 20
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 20,
+                                    "minReps": 20
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 20,
+                                    "minReps": 20
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 3,
+                                    "mark": 0,
+                                    "maxReps": 20,
+                                    "minReps": 20
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 4,
+                                    "mark": 0,
+                                    "maxReps": 20,
+                                    "minReps": 20
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 5,
+                                    "mark": 0,
+                                    "maxReps": 20,
+                                    "minReps": 20
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 6,
+                                    "mark": 0,
+                                    "maxReps": 20,
+                                    "minReps": 20
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 7,
+                                    "mark": 0,
+                                    "maxReps": 20,
+                                    "minReps": 20
+                                }
+                            ],
+                            "restPerSet": 0,
+                            "note": "feet low and touching on platform"
+                        },
+                        "equipment": 4,
+                        "mainTargetMuscle": 6,
                         "secondaryTargetMuscles": [
                             4,
                             1
@@ -58096,9 +58873,9 @@
                     {
                         "@type": "MuscleActivity",
                         "custom": false,
-                        "id": "167",
-                        "instructions": "The technique is identical to a regular Squat, but with extra stability from the machine. Stand in the machine with the shoulder pads on your shoulders, unrack the weight and sit down until your thighs are parallel to the floor, then stand back up.",
-                        "name": "Machine Hack Squat",
+                        "id": "150",
+                        "instructions": "Put the barbell on your upper back and squat down until your thighs are parallel to the floor. Then stand back up. Keep your back straight and abs flexed throughout the movement.",
+                        "name": "Barbell Squat",
                         "performanceTarget": {
                             "groupIndex": -1,
                             "parameters": [
@@ -58106,39 +58883,39 @@
                                     "allOut": false,
                                     "index": 0,
                                     "mark": 0,
-                                    "maxReps": 30,
-                                    "minReps": 30
+                                    "maxReps": 6,
+                                    "minReps": 6
                                 },
                                 {
                                     "allOut": false,
                                     "index": 1,
                                     "mark": 0,
-                                    "maxReps": 30,
-                                    "minReps": 30
+                                    "maxReps": 6,
+                                    "minReps": 6
                                 },
                                 {
                                     "allOut": false,
                                     "index": 2,
                                     "mark": 0,
-                                    "maxReps": 30,
-                                    "minReps": 30
+                                    "maxReps": 6,
+                                    "minReps": 6
                                 },
                                 {
                                     "allOut": false,
                                     "index": 3,
                                     "mark": 0,
-                                    "maxReps": 30,
-                                    "minReps": 30
+                                    "maxReps": 6,
+                                    "minReps": 6
                                 }
                             ],
                             "restPerSet": 0,
-                            "note": " inside shoulder width stance"
+                            "note": " Cannonball 4:0:4:0"
                         },
-                        "equipment": 4,
+                        "equipment": 1,
                         "mainTargetMuscle": 6,
                         "secondaryTargetMuscles": [
-                            4,
-                            1
+                            1,
+                            4
                         ],
                         "type": 0
                     },
@@ -58155,32 +58932,33 @@
                                     "allOut": false,
                                     "index": 0,
                                     "mark": 0,
-                                    "maxReps": 50,
-                                    "minReps": 50
+                                    "maxReps": 6,
+                                    "minReps": 6
                                 },
                                 {
                                     "allOut": false,
                                     "index": 1,
                                     "mark": 0,
-                                    "maxReps": 50,
-                                    "minReps": 50
+                                    "maxReps": 6,
+                                    "minReps": 6
                                 },
                                 {
                                     "allOut": false,
                                     "index": 2,
                                     "mark": 0,
-                                    "maxReps": 50,
-                                    "minReps": 50
+                                    "maxReps": 6,
+                                    "minReps": 6
                                 },
                                 {
                                     "allOut": false,
                                     "index": 3,
                                     "mark": 0,
-                                    "maxReps": 50,
-                                    "minReps": 50
+                                    "maxReps": 6,
+                                    "minReps": 6
                                 }
                             ],
-                            "restPerSet": 0
+                            "restPerSet": 0,
+                            "note": "Yes again 4:0:4:0"
                         },
                         "equipment": 4,
                         "mainTargetMuscle": 6,
@@ -58189,9 +58967,9 @@
                     {
                         "@type": "MuscleActivity",
                         "custom": false,
-                        "id": "188",
-                        "instructions": "Sit comfortably in the machine and begin the movement by pushing your legs out to your sides as far as you can. Then return them to the starting position. All of this while keeping your upper body stationary.",
-                        "name": "Machine Thigh Abduction (Out)",
+                        "id": "57",
+                        "instructions": "Sit and grab the barbell with an underhand grip. Rest your arms on your thighs and let it roll all the way out to your fingers. Then squeeze it with your fingers so that the barbell ends up in the middle of your palm again.",
+                        "name": "Barbell Wrist Curl",
                         "performanceTarget": {
                             "groupIndex": -1,
                             "parameters": [
@@ -58222,17 +59000,80 @@
                                     "mark": 0,
                                     "maxReps": 50,
                                     "minReps": 50
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 4,
+                                    "mark": 0,
+                                    "maxReps": 50,
+                                    "minReps": 50
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 5,
+                                    "mark": 0,
+                                    "maxReps": 50,
+                                    "minReps": 50
                                 }
                             ],
-                            "restPerSet": 0
+                            "restPerSet": 0,
+                            "note": "Superset with reverse"
+                        },
+                        "equipment": 1,
+                        "mainTargetMuscle": 9,
+                        "secondaryTargetMuscles": [
+                            3
+                        ],
+                        "type": 0
+                    },
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": false,
+                        "id": "187",
+                        "instructions": "Sit in the machine and adjust it so that you feel a minor stretch as you put your legs into the starting position. Push your legs together and then slowly let them back out again until you return to the starting position.",
+                        "name": "Machine Thigh Adduction (In)",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 3,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                }
+                            ],
+                            "restPerSet": 0,
+                            "note": "Yes again 4:0:4:0"
                         },
                         "equipment": 4,
                         "mainTargetMuscle": 6,
                         "type": 0
                     }
                 ],
-                "index": 5,
-                "name": "QUADS/ADDUCTORS/ABDUCTORS",
+                "index": 6,
+                "name": "QUADS/ADDUCTOR/FOREARMS",
                 "type": 0
             }
         ],
