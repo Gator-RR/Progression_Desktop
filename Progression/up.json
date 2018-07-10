@@ -59080,5 +59080,63 @@
         "id": "631be97a-902a-43fe-9ca5-1bf91f050063",
         "name": "Quad Guy",
         "upcomingDayIndex": 0
+    },
+    {
+        "createdTime": 1531259302260,
+        "days": [
+            {
+                "activities": [
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": false,
+                        "id": "189",
+                        "instructions": "Adjust the machine so that you feel a good stretch in the starting position, slightly bent back. Then begin the movement by crunching forward, rounding your lower back a bit and squeezing your abs.",
+                        "name": "Ab Machine",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 0,
+                                    "minReps": 0
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 0,
+                                    "minReps": 0
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 0,
+                                    "minReps": 0
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 3,
+                                    "mark": 0,
+                                    "maxReps": 0,
+                                    "minReps": 0
+                                }
+                            ],
+                            "restPerSet": 0
+                        },
+                        "equipment": 4,
+                        "mainTargetMuscle": 1,
+                        "type": 0
+                    }
+                ],
+                "index": 0,
+                "type": 0
+            }
+        ],
+        "id": "84646714-f521-4f6f-9694-3e59ddc00517",
+        "name": "Quad Guy Old",
+        "upcomingDayIndex": 0
     }
 ]
