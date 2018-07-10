@@ -57551,6 +57551,361 @@
                 "index": 3,
                 "name": "Shoulders/Biceps",
                 "type": 0
+            },
+            {
+                "activities": [
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": false,
+                        "id": "229",
+                        "instructions": "Sit down with the pads on your upper thighs and unrack the weight. Lower it all the way down so that you feel a full stretch of your calves, then push it all the way up and return back down. Pause for a second or two in the bottom of the movement so that the weight doesn't get pushed up with the help of your achilles heel.",
+                        "name": "Machine Calf Raise (Seated)",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 8,
+                                    "minReps": 8
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 8,
+                                    "minReps": 8
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 3,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 4,
+                                    "mark": 0,
+                                    "maxReps": 4,
+                                    "minReps": 4
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 5,
+                                    "mark": 0,
+                                    "maxReps": 4,
+                                    "minReps": 4
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 6,
+                                    "mark": 0,
+                                    "maxReps": 8,
+                                    "minReps": 8
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 7,
+                                    "mark": 0,
+                                    "maxReps": 12,
+                                    "minReps": 12
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 8,
+                                    "mark": 0,
+                                    "maxReps": 16,
+                                    "minReps": 16
+                                }
+                            ],
+                            "restPerSet": 0
+                        },
+                        "equipment": 4,
+                        "mainTargetMuscle": 4,
+                        "type": 0
+                    },
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": false,
+                        "id": "233",
+                        "instructions": "Stand up in a smith machine with a plate or some elevated object on the floor in front of you. Stand on it with the front of your foot and push yourself up through your foot. Then lower yourself back down. Tip: Stop for 1 second at the bottom of the movement.",
+                        "name": "Smith Machine Calf Raise",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 8,
+                                    "minReps": 8
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 8,
+                                    "minReps": 8
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 3,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 4,
+                                    "mark": 0,
+                                    "maxReps": 4,
+                                    "minReps": 4
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 5,
+                                    "mark": 0,
+                                    "maxReps": 4,
+                                    "minReps": 4
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 6,
+                                    "mark": 0,
+                                    "maxReps": 8,
+                                    "minReps": 8
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 7,
+                                    "mark": 0,
+                                    "maxReps": 12,
+                                    "minReps": 12
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 8,
+                                    "mark": 0,
+                                    "maxReps": 16,
+                                    "minReps": 16
+                                }
+                            ],
+                            "restPerSet": 0
+                        },
+                        "equipment": 5,
+                        "mainTargetMuscle": 4,
+                        "type": 0
+                    },
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": false,
+                        "id": "205",
+                        "instructions": "Lie down flat on the floor with a weight plate or dumbbell behind your head. Hold onto it while keeping it behind your neck above the floor and lift your upper body towards the ceiling.",
+                        "name": "Weighted Crunch",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 8,
+                                    "minReps": 8
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 8,
+                                    "minReps": 8
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 8,
+                                    "minReps": 8
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 3,
+                                    "mark": 0,
+                                    "maxReps": 8,
+                                    "minReps": 8
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 4,
+                                    "mark": 0,
+                                    "maxReps": 16,
+                                    "minReps": 16
+                                }
+                            ],
+                            "restPerSet": 0
+                        },
+                        "equipment": 3,
+                        "mainTargetMuscle": 1,
+                        "type": 0
+                    },
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": false,
+                        "id": "286",
+                        "instructions": "Lay down flat on the floor with your legs bent. Thrust your hips towards the ceiling as far as you can and keep it in the top position for a second or two. Then release it back down to the floor again. You've just completed a repetition.",
+                        "name": "Bodyweight Bridge",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 100,
+                                    "minReps": 100
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 100,
+                                    "minReps": 100
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 100,
+                                    "minReps": 100
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 3,
+                                    "mark": 0,
+                                    "maxReps": 100,
+                                    "minReps": 100
+                                }
+                            ],
+                            "restPerSet": 0
+                        },
+                        "equipment": 3,
+                        "mainTargetMuscle": 6,
+                        "type": 0
+                    },
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": false,
+                        "id": "198",
+                        "instructions": "Hang freely from a pull-up-bar and raise your legs straight forward as if you were doing a curl with your whole body.",
+                        "name": "Hanging Leg Raise",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 100,
+                                    "minReps": 100
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 100,
+                                    "minReps": 100
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 100,
+                                    "minReps": 100
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 3,
+                                    "mark": 0,
+                                    "maxReps": 100,
+                                    "minReps": 100
+                                }
+                            ],
+                            "restPerSet": 0
+                        },
+                        "equipment": 3,
+                        "mainTargetMuscle": 1,
+                        "type": 0
+                    },
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": false,
+                        "id": "193",
+                        "instructions": "Stand on your knees in a cable machine with a cable attached to the handle. Grab the cable with both hands at the sides of your head. Pull the cable down as if you were doing an upside-down sit-up. Then let the cable back up. Keep hips stationary throughout the movement.",
+                        "name": "Cable Crunch",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 8,
+                                    "minReps": 8
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 8,
+                                    "minReps": 8
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 8,
+                                    "minReps": 8
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 3,
+                                    "mark": 0,
+                                    "maxReps": 8,
+                                    "minReps": 8
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 4,
+                                    "mark": 0,
+                                    "maxReps": 16,
+                                    "minReps": 16
+                                }
+                            ],
+                            "restPerSet": 0
+                        },
+                        "equipment": 6,
+                        "mainTargetMuscle": 1,
+                        "type": 0
+                    }
+                ],
+                "index": 4,
+                "name": "Calves/Abs/Neck",
+                "type": 0
             }
         ],
         "id": "631be97a-902a-43fe-9ca5-1bf91f050063",
