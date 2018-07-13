@@ -113,6 +113,7 @@ class ProgressionDesktop(tk.Tk):
                 parameters[-1]['index'] = i
 
             self.new_activities[target]['performanceTarget']['parameters'] = parameters
+            self.new_activities[target]['performanceTarget']['restPerSet'] = 30
             if len(set_rep_note) > 1:
                 note = set_rep_note[1]
                 self.new_activities[target]['performanceTarget']['note'] = note
