@@ -104,7 +104,8 @@ class ProgressionDesktop(tk.Tk):
 
         for target in range(0, len(frame.entry_list)):
             parameters = []
-            set_rep = frame.entry_list[target].get().split()
+            set_rep_note = frame.entry_list[target].get().split('#')
+            set_rep = set_rep_note[0].split()
             for i in range(0, len(set_rep)):
                 parameters.append(parameter.copy())
                 parameters[-1]['maxReps'] = int(set_rep[i])
@@ -112,6 +113,10 @@ class ProgressionDesktop(tk.Tk):
                 parameters[-1]['index'] = i
 
             self.new_activities[target]['performanceTarget']['parameters'] = parameters
+            self.new_activities[target]['performanceTarget']['restPerSet'] = 30
+            if len(set_rep_note) > 1:
+                note = set_rep_note[1]
+                self.new_activities[target]['performanceTarget']['note'] = note
 
         return self.new_activities
 
