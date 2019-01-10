@@ -82,7 +82,7 @@ class ProgressionDesktop(tk.Tk):
 
     def add_day(self):
         up = self.read_json('Progression\\up.json')
-        quad_guy = [prog for prog in up if prog['name'] == 'Quad Guy']
+        quad_guy = [prog for prog in up if prog['name'] == 'Quad Guy 0']
         day = quad_guy[0]['days'][-1].copy()
         day['index'] += 1
         day['name'] = self.frames['DetailsPage'].entry_name.get()
