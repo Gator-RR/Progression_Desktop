@@ -55802,6 +55802,435 @@
         "upcomingDayIndex": 0
     },
     {
+        "createdTime": 1531259302260,
+        "days": [
+            {
+                "activities": [
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": false,
+                        "id": "41",
+                        "instructions": "Rest your chest against the preacher pad. Grab an Ez-bar at the inner handle, your arms should be slightly rotated inwards from this grip. Lower the weight down until your arms are fully stretched and then curl the weight back up.",
+                        "name": "EZ-Bar Preacher Curl",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 20,
+                                    "minReps": 20
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 20,
+                                    "minReps": 20
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 15,
+                                    "minReps": 15
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 3,
+                                    "mark": 0,
+                                    "maxReps": 15,
+                                    "minReps": 15
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 4,
+                                    "mark": 0,
+                                    "maxReps": 10,
+                                    "minReps": 10
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 5,
+                                    "mark": 0,
+                                    "maxReps": 10,
+                                    "minReps": 10
+                                }
+                            ],
+                            "restPerSet": 30
+                        },
+                        "equipment": 1,
+                        "mainTargetMuscle": 3,
+                        "type": 0
+                    },
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": false,
+                        "id": "223",
+                        "instructions": "Sit on a bench with a barbell positioned above your head. Keep arms straight at the start of the movement and begin by bending your arms at the elbow. Lower the weight down until it reaches your neck, then push it back up.",
+                        "name": "Barbell Triceps Extension (Seated)",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 20,
+                                    "minReps": 20
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 20,
+                                    "minReps": 20
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 15,
+                                    "minReps": 15
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 3,
+                                    "mark": 0,
+                                    "maxReps": 15,
+                                    "minReps": 15
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 4,
+                                    "mark": 0,
+                                    "maxReps": 10,
+                                    "minReps": 10
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 5,
+                                    "mark": 0,
+                                    "maxReps": 10,
+                                    "minReps": 10
+                                }
+                            ],
+                            "restPerSet": 30
+                        },
+                        "equipment": 1,
+                        "mainTargetMuscle": 8,
+                        "type": 0
+                    },
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": false,
+                        "id": "29",
+                        "instructions": "Stand up with one dumbbell in each hand. Keep your elbows tucked in at your sides as you curl the dumbbells up until they're at shoulder level. Then lower them back down to the sides of your thighs.",
+                        "name": "Dumbbell Curl",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 15,
+                                    "minReps": 15
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 12,
+                                    "minReps": 12
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 10,
+                                    "minReps": 10
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 3,
+                                    "mark": 0,
+                                    "maxReps": 15,
+                                    "minReps": 15
+                                }
+                            ],
+                            "restPerSet": 30,
+                            "note": "standing double arm"
+                        },
+                        "equipment": 2,
+                        "mainTargetMuscle": 3,
+                        "type": 0
+                    },
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": false,
+                        "id": "209",
+                        "instructions": "Stand in a cable machine with a bar attached to the handle. The handle should be at shoulder height. Grab it with overhand grip so that your palms are facing downwards towards the floor. Tuck your elbows in at your sides and push the bar down towards your thighs, then lower it back up.",
+                        "name": "Cable Pushdown (with Bar Handle)",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 15,
+                                    "minReps": 15
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 12,
+                                    "minReps": 12
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 10,
+                                    "minReps": 10
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 3,
+                                    "mark": 0,
+                                    "maxReps": 15,
+                                    "minReps": 15
+                                }
+                            ],
+                            "restPerSet": 30,
+                            "note": "wide grip"
+                        },
+                        "equipment": 6,
+                        "mainTargetMuscle": 8,
+                        "type": 0
+                    },
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": false,
+                        "id": "236",
+                        "instructions": "Position yourself in front of a preacher bench so that you're looking at where you would usually sit. Grab the barbell from the seat and align your elbows with the padding of the bench and begin to curl. Use a shoulder wide grip.",
+                        "name": "Spider Curl",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 10,
+                                    "minReps": 10
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 8,
+                                    "minReps": 8
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 3,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 4,
+                                    "mark": 0,
+                                    "maxReps": 8,
+                                    "minReps": 8
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 5,
+                                    "mark": 0,
+                                    "maxReps": 10,
+                                    "minReps": 10
+                                }
+                            ],
+                            "restPerSet": 30,
+                            "note": "reverse incline bench barbell spider curl hands touching"
+                        },
+                        "equipment": 1,
+                        "mainTargetMuscle": 3,
+                        "type": 0
+                    },
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": false,
+                        "id": "207",
+                        "instructions": "Lie down flat on a bench. Grab a barbell at a shoulder wide grip. Position yourself under the barbell so that it is above your chest. Bend your elbows but keep them stationary and lower the barbell down behind your head until your triceps are fully stretched. Then push it back up so that it ends up above your chest.",
+                        "name": "Lying Barbell Skull Crusher",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 10,
+                                    "minReps": 10
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 8,
+                                    "minReps": 8
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 3,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 4,
+                                    "mark": 0,
+                                    "maxReps": 8,
+                                    "minReps": 8
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 5,
+                                    "mark": 0,
+                                    "maxReps": 10,
+                                    "minReps": 10
+                                }
+                            ],
+                            "restPerSet": 30,
+                            "note": "hands touching incline bench"
+                        },
+                        "equipment": 1,
+                        "mainTargetMuscle": 8,
+                        "type": 0
+                    },
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": false,
+                        "id": "210",
+                        "instructions": "Stand up in a cable machine with a rope attached to the handle. The handle should be at shoulder height. Grab it with both hands to that your palms are facing inwards against each other. Tuck your elbows in at your sides and push the rope down towards your thighs, then lower it back up.",
+                        "name": "Cable Pushdown (with Rope Handle)",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 3,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                }
+                            ],
+                            "restPerSet": 30,
+                            "note": "close v grip super set 1212"
+                        },
+                        "equipment": 6,
+                        "mainTargetMuscle": 8,
+                        "type": 0
+                    },
+                    {
+                        "@type": "MuscleActivity",
+                        "custom": false,
+                        "id": "316",
+                        "instructions": "Stand up right next to a cable machine with a bar attached to it. Grab it and keep your elbows tucked in to your sides, then simply curl the weight up to shoulder level. Lower it back down slowly until your arms are fully extended.",
+                        "name": "Cable Curl",
+                        "performanceTarget": {
+                            "groupIndex": -1,
+                            "parameters": [
+                                {
+                                    "allOut": false,
+                                    "index": 0,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 1,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 2,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                },
+                                {
+                                    "allOut": false,
+                                    "index": 3,
+                                    "mark": 0,
+                                    "maxReps": 6,
+                                    "minReps": 6
+                                }
+                            ],
+                            "restPerSet": 30,
+                            "note": "double arm over head 1212"
+                        },
+                        "equipment": 6,
+                        "mainTargetMuscle": 3,
+                        "type": 0
+                    }
+                ],
+                "index": 0,
+                "type": 0,
+                "name": "BICEPS/TRICEPS"
+            }
+        ],
+        "id": "84646714-f521-4f6f-9694-3e59ddc00517",
+        "name": "Quad Guy 2",
+        "upcomingDayIndex": 0
+    },
+    {
         "createdTime": 1515725708650,
         "days": [
             {
