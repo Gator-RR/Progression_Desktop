@@ -12,5 +12,49 @@
             8
         ],
         "type": 0
+    },
+    {
+        "@type": "MuscleActivity",
+        "custom": true,
+        "id": "87e4f2e9-c1ba-45fb-b6fb-094a8a142123",
+        "instructions": "Lie down on a declined bench with one cable in each hand resting at your lower chest. Begin the movement by pushing them up to the starting position with your arms straight. Then begin to lower them out to your sides until your elbows are at the same level as your body, then push them back together. Tip: Squeeze your chest together at the top of the movement as if you were squeezing a football!",
+        "name": "Decline Cable Fly",
+        "performanceTarget": {
+            "groupIndex": -1,
+            "parameters": [
+                {
+                    "allOut": false,
+                    "index": 0,
+                    "mark": 0,
+                    "maxReps": 0,
+                    "minReps": 0
+                },
+                {
+                    "allOut": false,
+                    "index": 1,
+                    "mark": 0,
+                    "maxReps": 0,
+                    "minReps": 0
+                },
+                {
+                    "allOut": false,
+                    "index": 2,
+                    "mark": 0,
+                    "maxReps": 0,
+                    "minReps": 0
+                },
+                {
+                    "allOut": false,
+                    "index": 3,
+                    "mark": 0,
+                    "maxReps": 0,
+                    "minReps": 0
+                }
+            ],
+            "restPerSet": 0
+        },
+        "equipment": 2,
+        "mainTargetMuscle": 5,
+        "type": 0
     }
 ]
